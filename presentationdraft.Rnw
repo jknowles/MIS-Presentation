@@ -88,16 +88,11 @@
 
 <<echo=FALSE>>=
 library("ggplot2")
-#load("C:/git/LDS_TOOLS/data/packagedata.rda")
-source('C:/git/LDS_TOOLS/R/mosaicplotdraft.R')
-#load("~/LDS_TOOLS/data/packagedata.rda") # Alternate directory
-#source('~/LDS_TOOLS/R/mosaicplotdraft.R') #Alternate directory for Linux
-source('C:/git/LDS_TOOLS/R/proficiencypolygonfunction.R')
-#source('~/LDS_TOOLS/R/proficiencypolygonfunction.R')
+source('mosaicplotdraft.R') #Alternate directory for Linux
+source('proficiencypolygonfunction.R')
 options(width=50)
-#source('~/LDS_TOOLS/data/simulate_data.R') #Load data by running R script to simulate 
+source('simulate_data.R') #Load data by running R script to simulate 
 #datasets
-source('C:/git/LDS_TOOLS/data/simulate_data.R')
 @
 
 \section{What is Policy Relevant Analysis?}

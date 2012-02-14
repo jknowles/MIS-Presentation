@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.3)  13 FEB 2012 13:22
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.3)  13 FEB 2012 20:17
 entering extended mode
-**C:/git/LDS_TOOLS/MIS*Presentation/presentationdraft.tex
-("C:/git/LDS_TOOLS/MIS Presentation/presentationdraft.tex"
+**C:/Users/Jared/mis-presentation/presentationdraft.tex
+(C:/Users/Jared/mis-presentation/presentationdraft.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -684,7 +684,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \NC@list=\toks40
 \extratabsurround=\skip57
 \backup@length=\skip58
-) ("C:\git\LDS_TOOLS\MIS Presentation\Sweave.sty"
+) (C:\Users\Jared\mis-presentation\Sweave.sty
 Package: Sweave 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -878,7 +878,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box81
 \@float@everytoks=\toks46
 \@floatcapt=\box82
-) ("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.aux")
+) (C:\Users\Jared\mis-presentation\presentationdraft.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
@@ -963,8 +963,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 76.
 LaTeX Info: Redefining \pageref on input line 76.
 LaTeX Info: Redefining \nameref on input line 76.
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.out") ("C:\git\LDS_TOOLS\
-MIS Presentation\presentationdraft.out")
+(C:\Users\Jared\mis-presentation\presentationdraft.out) (C:\Users\Jared\mis-pre
+sentation\presentationdraft.out)
 \@outlinefile=\write6
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 76.
@@ -1032,12 +1032,12 @@ Dictionary: translator-numbers-dictionary, Language: English
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\tran
 slator-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
-) ("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.nav") [1
+) (C:\Users\Jared\mis-presentation\presentationdraft.nav) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] ("C:\git\LDS_TOOLS\MIS Pr
-esentation\presentationdraft.toc") [2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (C:\Users\Jared\mis-prese
+ntation\presentationdraft.toc) [2
 
-] ("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc") [3
+] (C:\Users\Jared\mis-presentation\presentationdraft.toc) [3
 
 ] [4
 
@@ -1066,13 +1066,13 @@ Package pdftex.def Info: ./img/jen1.jpg used on input line 151.
 (pdftex.def)             Requested size: 364.19536pt x 364.19696pt.
 [14
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/jen1.jpg>]
-C:/git/LDS_TOOLS/MIS Presentation/presentationdraft.tex:155: Too many }'s
+ <C:/Users/Jared/mis-presentation/img/jen1.jpg>]
+C:/Users/Jared/mis-presentation/presentationdraft.tex:155: Too many }'s
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [15
 
 ]
@@ -1085,7 +1085,7 @@ Package pdftex.def Info: ./img/jen.jpg used on input line 163.
 
 [16
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/jen.jpg>]
+ <C:/Users/Jared/mis-presentation/img/jen.jpg>]
 [17
 
 ]
@@ -1140,7 +1140,7 @@ Package pdftex.def Info: ./img/fast.jpg used on input line 253.
 
 [32
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/fast.jpg>]
+ <C:/Users/Jared/mis-presentation/img/fast.jpg>]
 <./img/laserfocus.jpg, id=1076, 481.8pt x 350.7504pt>
 File: ./img/laserfocus.jpg Graphic file (type jpg)
 
@@ -1150,7 +1150,7 @@ Package pdftex.def Info: ./img/laserfocus.jpg used on input line 260.
 
 [33
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/laserfocus.jpg>]
+ <C:/Users/Jared/mis-presentation/img/laserfocus.jpg>]
 <./img/horseshoes2.jpg, id=1100, 1606.0pt x 1204.5pt>
 File: ./img/horseshoes2.jpg Graphic file (type jpg)
 
@@ -1160,12 +1160,12 @@ Package pdftex.def Info: ./img/horseshoes2.jpg used on input line 267.
 
 [34
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/horseshoes2.jpg>]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+ <C:/Users/Jared/mis-presentation/img/horseshoes2.jpg>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [35
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [36
 
 ]
@@ -1181,7 +1181,7 @@ Package pdftex.def Info: ./img/datain.jpg used on input line 289.
 
 [38
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/datain.jpg>]
+ <C:/Users/Jared/mis-presentation/img/datain.jpg>]
 <./img/silvergoldbars.jpg, id=1279, 578.16pt x 387.849pt>
 File: ./img/silvergoldbars.jpg Graphic file (type jpg)
 
@@ -1191,7 +1191,7 @@ Package pdftex.def Info: ./img/silvergoldbars.jpg used on input line 296.
 
 [39
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/silvergoldbars.jpg>]
+ <C:/Users/Jared/mis-presentation/img/silvergoldbars.jpg>]
 <./img/policyproduct.jpg, id=1303, 3083.52pt x 2040.62375pt>
 File: ./img/policyproduct.jpg Graphic file (type jpg)
 
@@ -1201,8 +1201,8 @@ Package pdftex.def Info: ./img/policyproduct.jpg used on input line 303.
 
 [40
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/policyproduct.jpg>]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+ <C:/Users/Jared/mis-presentation/img/policyproduct.jpg>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [41
 
 ]
@@ -1218,7 +1218,7 @@ Package pdftex.def Info: ./img/frustration.jpg used on input line 318.
 
 [43
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/frustration.jpg>]
+ <C:/Users/Jared/mis-presentation/img/frustration.jpg>]
 [44
 
 ]
@@ -1234,7 +1234,7 @@ Package pdftex.def Info: ./img/paperwork.jpg used on input line 334.
 
 [46
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/paperwork.jpg>]
+ <C:/Users/Jared/mis-presentation/img/paperwork.jpg>]
 [47
 
 ]
@@ -1247,7 +1247,7 @@ Package pdftex.def Info: ./img/jail.jpg used on input line 347.
 
 [48
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/jail.jpg>]
+ <C:/Users/Jared/mis-presentation/img/jail.jpg>]
 [49
 
 ]
@@ -1260,7 +1260,7 @@ Package pdftex.def Info: ./img/puzzleorg.jpg used on input line 361.
 
 [50
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/puzzleorg.jpg>]
+ <C:/Users/Jared/mis-presentation/img/puzzleorg.jpg>]
 [51
 
 ]
@@ -1288,11 +1288,11 @@ Package pdftex.def Info: ./img/irrelevant.jpg used on input line 390.
 
 [57
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/irrelevant.jpg>]
+ <C:/Users/Jared/mis-presentation/img/irrelevant.jpg>]
 [58
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [59
 
 ]
@@ -1305,7 +1305,7 @@ Package pdftex.def Info: ./img/openfield.jpg used on input line 416.
 
 [60
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/openfield.jpg>]
+ <C:/Users/Jared/mis-presentation/img/openfield.jpg>]
 <./img/rscreenshot.png, id=1915, 1938.24126pt x 1416.29124pt>
 File: ./img/rscreenshot.png Graphic file (type png)
 
@@ -1315,7 +1315,7 @@ Package pdftex.def Info: ./img/rscreenshot.png used on input line 423.
 
 [61
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/rscreenshot.png>]
+ <C:/Users/Jared/mis-presentation/img/rscreenshot.png>]
 [62
 
 ]
@@ -1331,7 +1331,7 @@ Package pdftex.def Info: ./img/maze.jpg used on input line 465.
 
 [64
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/maze.jpg>]
+ <C:/Users/Jared/mis-presentation/img/maze.jpg>]
 <./img/buggy.jpg, id=2024, 1104.125pt x 749.80125pt>
 File: ./img/buggy.jpg Graphic file (type jpg)
 
@@ -1341,7 +1341,7 @@ Package pdftex.def Info: ./img/buggy.jpg used on input line 472.
 
 [65
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/buggy.jpg>]
+ <C:/Users/Jared/mis-presentation/img/buggy.jpg>]
 <./img/hummer.jpg, id=2049, 1606.0pt x 1204.5pt>
 File: ./img/hummer.jpg Graphic file (type jpg)
 
@@ -1351,7 +1351,7 @@ Package pdftex.def Info: ./img/hummer.jpg used on input line 479.
 
 [66
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/hummer.jpg>]
+ <C:/Users/Jared/mis-presentation/img/hummer.jpg>]
 [67
 
 ]
@@ -1364,11 +1364,11 @@ Package pdftex.def Info: ./img/hummer.jpg used on input line 479.
 [70
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [71
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [72
 
 ]
@@ -1387,7 +1387,7 @@ Package pdftex.def Info: ./img/rstudio-windows.png used on input line 549.
 
 [75
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/rstudio-windows.png>]
+ <C:/Users/Jared/mis-presentation/img/rstudio-windows.png>]
 [76
 
 ]
@@ -1418,7 +1418,7 @@ Package pdftex.def Info: ./img/rstudio-windows.png used on input line 549.
 [85
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [86
 
 ]
@@ -1455,10 +1455,10 @@ Package pdftex.def Info: ./img/heatmap.pdf used on input line 624.
 
 [88
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/hex.pdf> <C:/git/LDS_TOOLS/MIS Presenta
-tion/img/crosstab.pdf> <C:/git/LDS_TOOLS/MIS Presentation/img/condensity.pdf> <
-C:/git/LDS_TOOLS/MIS Presentation/img/heatmap.pdf>]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+ <C:/Users/Jared/mis-presentation/img/hex.pdf> <C:/Users/Jared/mis-presentation
+/img/crosstab.pdf> <C:/Users/Jared/mis-presentation/img/condensity.pdf> <C:/Use
+rs/Jared/mis-presentation/img/heatmap.pdf>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [89
 
 ]
@@ -1475,7 +1475,7 @@ Overfull \vbox (12.57239pt too high) detected at line 635
 
 [90
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/classtree.pdf>]
+ <C:/Users/Jared/mis-presentation/img/classtree.pdf>]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 642.
 
 
@@ -1524,7 +1524,7 @@ Overfull \vbox (29.29132pt too high) detected at line 656
 
 [92
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/crosstab2.pdf>]
+ <C:/Users/Jared/mis-presentation/img/crosstab2.pdf>]
 [93
 
 ]
@@ -1541,7 +1541,7 @@ Overfull \vbox (6.03937pt too high) detected at line 680
 
 [94
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/FRL2010.png>]
+ <C:/Users/Jared/mis-presentation/img/FRL2010.png>]
 File: ./img/heatmap.pdf Graphic file (type pdf)
 
 <use ./img/heatmap.pdf>
@@ -1590,7 +1590,7 @@ Package pdftex.def Info: ./img/occupationscatter.png used on input line 718.
 
 [98
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/occupationscatter.png>]
+ <C:/Users/Jared/mis-presentation/img/occupationscatter.png>]
 <./img/g3belowproficientreadingscores.pdf, id=3117, 794.97pt x 614.295pt>
 File: ./img/g3belowproficientreadingscores.pdf Graphic file (type pdf)
 
@@ -1601,7 +1601,7 @@ Package pdftex.def Info: ./img/g3belowproficientreadingscores.pdf used on input
 
 [99
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/g3belowproficientreadingscores.pdf>]
+ <C:/Users/Jared/mis-presentation/img/g3belowproficientreadingscores.pdf>]
 <./img/proficiencypolygon.pdf, id=3156, 433.62pt x 361.35pt>
 File: ./img/proficiencypolygon.pdf Graphic file (type pdf)
 
@@ -1615,7 +1615,7 @@ Overfull \vbox (4.4139pt too high) detected at line 740
 
 [100
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/proficiencypolygon.pdf>]
+ <C:/Users/Jared/mis-presentation/img/proficiencypolygon.pdf>]
 <./img/facetstudents.pdf, id=3191, 433.62pt x 361.35pt>
 File: ./img/facetstudents.pdf Graphic file (type pdf)
 
@@ -1629,7 +1629,7 @@ Overfull \vbox (7.4851pt too high) detected at line 752
 
 [101
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/facetstudents.pdf>]
+ <C:/Users/Jared/mis-presentation/img/facetstudents.pdf>]
 <./img/facetstudentspoly.pdf, id=3226, 433.62pt x 361.35pt>
 File: ./img/facetstudentspoly.pdf Graphic file (type pdf)
 
@@ -1639,7 +1639,7 @@ Package pdftex.def Info: ./img/facetstudentspoly.pdf used on input line 769.
 
 [102
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/facetstudentspoly.pdf>]
+ <C:/Users/Jared/mis-presentation/img/facetstudentspoly.pdf>]
 <./img/coefplot1.pdf, id=3262, 505.89pt x 361.35pt>
 File: ./img/coefplot1.pdf Graphic file (type pdf)
 
@@ -1653,7 +1653,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [103
 
 ]
-[104 <C:/git/LDS_TOOLS/MIS Presentation/img/coefplot1.pdf>]
+[104 <C:/Users/Jared/mis-presentation/img/coefplot1.pdf>]
 <./img/effectsize.pdf, id=3325, 505.89pt x 361.35pt>
 File: ./img/effectsize.pdf Graphic file (type pdf)
 
@@ -1663,8 +1663,8 @@ Package pdftex.def Info: ./img/effectsize.pdf used on input line 799.
 
 [105
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/effectsize.pdf>]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+ <C:/Users/Jared/mis-presentation/img/effectsize.pdf>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [106
 
 ]
@@ -1700,11 +1700,11 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
 [111
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [112
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [113
 
 ]
@@ -1726,11 +1726,11 @@ Overfull \hbox (17.73956pt too wide) in paragraph at lines 1032--1032
 [116
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [117
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.vrb")
+(C:\Users\Jared\mis-presentation\presentationdraft.vrb)
 [118
 
 ]
@@ -1759,7 +1759,7 @@ Overfull \vbox (12.57239pt too high) detected at line 1120
 
 [122
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/residplot.pdf>]
+ <C:/Users/Jared/mis-presentation/img/residplot.pdf>]
 <fittedplot.png, id=3934, 1027.84pt x 770.88pt>
 File: fittedplot.png Graphic file (type png)
 
@@ -1769,7 +1769,7 @@ Package pdftex.def Info: fittedplot.png used on input line 1128.
 
 [123
 
- <C:/git/LDS_TOOLS/MIS Presentation/fittedplot.png>]
+ <C:/Users/Jared/mis-presentation/fittedplot.png>]
 <mlfitted.png, id=3964, 1027.84pt x 770.88pt>
 File: mlfitted.png Graphic file (type png)
 
@@ -1779,7 +1779,7 @@ Package pdftex.def Info: mlfitted.png used on input line 1138.
 
 [124
 
- <C:/git/LDS_TOOLS/MIS Presentation/mlfitted.png>]
+ <C:/Users/Jared/mis-presentation/mlfitted.png>]
 <OLSandMLM.png, id=3993, 1204.5pt x 602.25pt>
 File: OLSandMLM.png Graphic file (type png)
 
@@ -1789,8 +1789,8 @@ Package pdftex.def Info: OLSandMLM.png used on input line 1148.
 
 [125
 
- <C:/git/LDS_TOOLS/MIS Presentation/OLSandMLM.png>]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+ <C:/Users/Jared/mis-presentation/OLSandMLM.png>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [126
 
 ]
@@ -1806,15 +1806,15 @@ Package pdftex.def Info: ./img/hackathon.jpg used on input line 1163.
 
 [128
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/hackathon.jpg>]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+ <C:/Users/Jared/mis-presentation/img/hackathon.jpg>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [129
 
 ]
 [130
 
 ]
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.toc")
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [131
 
 ]
@@ -1827,7 +1827,7 @@ Package pdftex.def Info: ./img/GitHublogo.png used on input line 1189.
 
 [132
 
- <C:/git/LDS_TOOLS/MIS Presentation/img/GitHublogo.png>]
+ <C:/Users/Jared/mis-presentation/img/GitHublogo.png>]
 [133
 
 ]
@@ -1864,7 +1864,7 @@ LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1300.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1300.
 
-("C:\git\LDS_TOOLS\MIS Presentation\presentationdraft.aux")
+(C:\Users\Jared\mis-presentation\presentationdraft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1300.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1300.
 
@@ -1876,12 +1876,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  17956 strings out of 494045
- 329954 string characters out of 3145969
+ 329848 string characters out of 3145969
  405261 words of memory out of 3000000
  20404 multiletter control sequences out of 15000+200000
  45922 words of font info for 90 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 49i,17n,67p,463b,698s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,67p,461b,698s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jared\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 tctt0900.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
@@ -1889,7 +1889,7 @@ s10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss1
 2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on presentationdraft.pdf (139 pages, 16776735 bytes).
+Output written on presentationdraft.pdf (139 pages, 16776670 bytes).
 PDF statistics:
  4578 PDF objects out of 5155 (max. 8388607)
  284 named destinations out of 1000 (max. 500000)
