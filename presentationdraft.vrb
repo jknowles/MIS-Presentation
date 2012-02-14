@@ -1,0 +1,75 @@
+\frametitle{A simple OLS Model}
+\begin{Schunk}
+\begin{Sinput}
+> mod1<-lm(readSS~female*race*econ+grade*year,data=student_long)
+> summary(mod1)
+\end{Sinput}
+\begin{Soutput}
+Call:
+lm(formula = readSS ~ female * race * econ + grade * year, data = student_long)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-284.566  -34.219    0.104   34.321  246.441
+
+Coefficients:
+                    Estimate Std. Error  t value
+(Intercept)        383.11107    0.49828  768.865
+female              14.24756    0.32404   43.969
+raceB              -37.21069    0.57997  -64.160
+raceH              -41.01409    0.78264  -52.405
+raceI                2.48529    2.15941    1.151
+raceA                0.45644    1.38578    0.329
+econ1              -54.71664    0.32522 -168.246
+grade               20.81004    0.07791  267.111
+year2001            -3.48643    0.63452   -5.495
+year2002           134.55881    0.63452  212.065
+female:raceB        -0.88573    0.82287   -1.076
+female:raceH         4.46915    1.09121    4.096
+female:raceI         4.72824    2.88579    1.638
+female:raceA        -0.04431    1.93005   -0.023
+female:econ1        -3.22112    0.45766   -7.038
+raceB:econ1        -11.97227    0.64901  -18.447
+raceH:econ1          6.46426    0.89487    7.224
+raceI:econ1        -25.56913    2.62396   -9.744
+raceA:econ1        -23.59874    1.72464  -13.683
+grade:year2001       9.50620    0.11018   86.281
+grade:year2002      -3.95024    0.11018  -35.853
+female:raceB:econ1  -0.29569    0.91935   -0.322
+female:raceH:econ1  -2.03755    1.25022   -1.630
+female:raceI:econ1   1.70605    3.57366    0.477
+female:raceA:econ1  -2.64903    2.39991   -1.104
+                   Pr(>|t|)
+(Intercept)         < 2e-16 ***
+female              < 2e-16 ***
+raceB               < 2e-16 ***
+raceH               < 2e-16 ***
+raceI                 0.250
+raceA                 0.742
+econ1               < 2e-16 ***
+grade               < 2e-16 ***
+year2001           3.92e-08 ***
+year2002            < 2e-16 ***
+female:raceB          0.282
+female:raceH       4.21e-05 ***
+female:raceI          0.101
+female:raceA          0.982
+female:econ1       1.95e-12 ***
+raceB:econ1         < 2e-16 ***
+raceH:econ1        5.07e-13 ***
+raceI:econ1         < 2e-16 ***
+raceA:econ1         < 2e-16 ***
+grade:year2001      < 2e-16 ***
+grade:year2002      < 2e-16 ***
+female:raceB:econ1    0.748
+female:raceH:econ1    0.103
+female:raceI:econ1    0.633
+female:raceA:econ1    0.270
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 51.53 on 449975 degrees of freedom
+Multiple R-squared: 0.6742, Adjusted R-squared: 0.6742
+F-statistic: 3.88e+04 on 24 and 449975 DF,  p-value: < 2.2e-16
+\end{Soutput}
+\end{Schunk}

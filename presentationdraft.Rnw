@@ -1,0 +1,1280 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usepackage{array}
+
+
+\title [Policy Relevant Research with LDS Data]{Policy Relevant Visualization and Analysis of LDS Data With Open Source Tools}
+
+\author{Jared Knowles}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[DPI] % (optional, but mostly needed)
+{
+  Policy Research Advisor\\
+  Wisconsin Department of Public Instruction
+}
+\date[MIS] % (optional)
+{January 20, 2012 / MIS Conference}
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{OHSU_H_4C_POS_RGB}
+%\logo{\pgfuseimage{university-logo}}
+
+\usepackage{Sweave}
+\usepackage{dcolumn, multirow}
+\usepackage{epsfig,graphicx,multicol}
+\usepackage{verbatim, rotating, paralist,hyperref}
+\usepackage{float,color}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\graphicspath{{./img/}} %additional graphics directory
+\SweaveOpts{pdf=TRUE, echo=FALSE, fig=FALSE, eps=FALSE, tidy=T, width=4, height=4, keep.source=TRUE}
+
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\AtBeginSection[]
+{
+   \begin{frame}
+       \frametitle{Outline}
+        \begin{multicols}{2} 
+       \tableofcontents[currentsection]
+        \end{multicols} 
+   \end{frame}
+}
+
+
+
+\AtBeginSubsection[]
+{
+   \begin{frame}
+       \frametitle{Outline}
+       \begin{multicols}{2} 
+       \tableofcontents[currentsection,currentsubsection]
+       \end{multicols} 
+   \end{frame}
+}
+
+
+\AtBeginDocument{ 
+\DefineVerbatimEnvironment{Sinput}{Verbatim} {xleftmargin=2em,fontsize= 
+\footnotesize,fontseries=bc,frame=single} 
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{xleftmargin=2em,fontsize= 
+\footnotesize,frame=leftline} 
+\DefineVerbatimEnvironment{Scode}{Verbatim}{xleftmargin=2em,fontsize= 
+\footnotesize,fontseries=bc} 
+}
+
+\begin{document}
+
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+% \begin{frame}{Outline}
+%   \tableofcontents
+% \end{frame}
+
+<<echo=FALSE>>=
+library("ggplot2")
+#load("C:/git/LDS_TOOLS/data/packagedata.rda")
+source('C:/git/LDS_TOOLS/R/mosaicplotdraft.R')
+#load("~/LDS_TOOLS/data/packagedata.rda") # Alternate directory
+#source('~/LDS_TOOLS/R/mosaicplotdraft.R') #Alternate directory for Linux
+source('C:/git/LDS_TOOLS/R/proficiencypolygonfunction.R')
+#source('~/LDS_TOOLS/R/proficiencypolygonfunction.R')
+options(width=50)
+#source('~/LDS_TOOLS/data/simulate_data.R') #Load data by running R script to simulate 
+#datasets
+source('C:/git/LDS_TOOLS/data/simulate_data.R')
+@
+
+\section{What is Policy Relevant Analysis?}
+\label{sec:pol-rel-analysis}
+
+\subsection{Defining Terms}
+
+\begin{frame}
+\frametitle{Defining Terms}
+\Large \textbf{Policy relevant analysis is answering questions that inform policy in a timely fashion and presenting results in an accessible and engaging fashion.}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Big Questions}
+  \begin{itemize}
+  \item States and LEAs have an abundance of data, but how do 
+  we extract meaning from it?
+  \item Can we do data analysis fast enough to inform decisions and improve 
+  outcomes?
+  \item Can we produce analyses that are approachable to policy makers and the public so that they galvanize change?
+  \item Can we do these things in a time of reduced staffing, decreased 
+  budgets, and a shortage of time?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example}
+\begin{center}
+\textbf{The state chief school officer asks: \\ 
+``Do our state bilingual-bicultural programs provide any benefit to our students? Should we focus on ESL more or keep our BLBC programs?''}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Options?}
+  \begin{columns}
+  \column[t]{.35\textwidth}
+  Option
+  \begin{itemize}
+  \item Contract with university faculty
+  \pause
+  \item Consult existing literature
+  \pause
+  \item Call the REL
+  \pause
+  \end{itemize}
+  \column[t]{.65\textwidth}
+  Caveats
+  \begin{itemize}
+  \item This will take months. Budget proposal is due in three weeks. Costly.
+  \pause
+  \item No studies in our state. State legislators not impressed.
+  \pause
+  \item Study will take months. 
+  \pause
+  \end{itemize}
+  \end{columns}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{jen1}}
+\begin{frame}[plain]
+\frametitle{Or Ask Jen}
+\end{frame}
+}
+
+
+\end{frame}
+
+\subsection{The Problem}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{jen}}
+\begin{frame}[plain]
+\frametitle{Not Enough Jen's}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{How do we do more?}
+\begin{center}
+\Large \textbf{What tools exist to help us turn data into usable information that informs decisions?}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Summary}
+\begin{center}
+\Large \textbf{An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem.}
+\\
+\end{center}
+\large John Tukey
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Policy Relevant Research}
+  \begin{columns}
+  \column[t]{.5\textwidth}
+  Policy relevant research is...
+  \begin{itemize}
+  \item Fast
+  \pause
+  \item Narrowly focused
+  \pause
+  \item Approximate
+  \pause
+  \item Fast
+  \end{itemize}
+  \column[t]{.5\textwidth}
+  Traditional research is...
+  \begin{itemize}
+  \item Long term
+  \pause
+  \item Branches to new ideas and new paths
+  \pause
+  \item Focused on precision 
+  \pause
+  \item Peer-reviewed
+  \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Policy Relevant Research Is Not...}
+  \begin{itemize}
+  \item A visualization and summary statistics
+  \item Descriptive statistics organized with some text
+  \item Ignorant of policy limitations and context
+  \end{itemize}
+\begin{center}
+But it also is not:
+\end{center}
+  \begin{itemize}
+    \item Focused on purely causal relationships
+    \item Overly concerned with precision of estimates
+    \item Irrefutable 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Examples from One State}
+  In Wisconsin we have done a few analyses that have helped us make decisions. 
+  \begin{itemize}
+  \item An analysis of the effectiveness of bilingual-bicultural programs
+  \pause
+  \item An analysis of reading performance and markers of struggling literacy
+  \pause
+  \item An analysis of concentration in dropouts
+  \pause
+  \item Data visualization to demonstrate problem scope for grants and press materials
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge \textbf{How?}
+\end{center}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{fast}}
+\begin{frame}[plain]
+\frametitle{Policy Relevant Analysis is FAST}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{laserfocus}}
+\begin{frame}[plain]
+\frametitle{Policy Relevant Analysis is FOCUSED}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{horseshoes2}}
+\begin{frame}[plain]
+\frametitle{Policy Relevant Analysis is APPROXIMATE}
+\end{frame}
+}
+
+
+\section{Extracting Meaning from Data}
+\label{sec:extrct-meaning}
+
+\subsection{Why is Data Analysis So Important?}
+\begin{frame}
+\frametitle{Gathering More Data}
+\begin{itemize}
+  \item States and districts collect hundreds of attributes about millions of students
+  \item Data is collected before children reach school age and after they have moved to a college or a career
+  \item Patterns can tell us how choices in policy will actually affect the population
+  \item Lessons learned can help us build simulations to weigh policy outcomes before making decisions--decision support
+\end{itemize}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{datain}}
+\begin{frame}[plain]
+\frametitle{Data is like ore}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{silvergoldbars}}
+\begin{frame}[plain]
+\frametitle{Analysis concentrates its value}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{policyproduct}}
+\begin{frame}[plain]
+\frametitle{And it can be used to produce something}
+\end{frame}
+}
+
+
+
+\subsection{Barriers to Data Analysis}
+
+\begin{frame}
+\frametitle{Institutional Frustrations}
+We just need to get our jobs done. We need to do them efficiently, but also transparently and in a reproducible manner. This is currently costly in time, money, and management resources.
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{frustration}}
+\begin{frame}[plain]
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Institutional Frustrations}
+We just need to get our jobs done. We need to do them efficiently, but also transparently and in a reproducible manner. This is currently costly in time, money, and management resources.
+  \begin{itemize}
+  \item Acquiring proprietary tools from vendors takes agreements, legal documents, and lag time
+  \pause
+  \item Sharing data with external researchers requires legal agreements, levels of management approval, and planning time to specify narrow scope
+  \end {itemize}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{paperwork}}
+\begin{frame}[plain]
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Institutional Frustrations}
+  \begin{itemize}
+  \item Analyses are often done in proprietary tool sets, poorly documented, and unable to be reproduced with updated data later
+  \end {itemize}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{jail}}
+\begin{frame}[plain]
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{What about analyses we do?}
+\begin{center}
+\Large Analyses we do complete are not used enough to drive decisions.
+\end {center}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{puzzleorg}}
+\begin{frame}[plain]
+\frametitle{Incoherence}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Analyses Don't Get Used}
+Often when we do an in house analysis it does not get used or only gets used once.
+  \begin{itemize}
+  \item In house analysis often relies on the expertise of one or two staff who are obligated elsewhere. 
+  \pause
+  \item Analysis are done using ad-hoc tools distributed among expertise of individual staff with no comprehensive standard. 
+  \pause
+  \item The information we have is dependent on individual staff and the analysis projects they undertake and their tenure supporting these efforts.
+  \pause
+  \item Staff turnover threatens to change the information available to make decisions as knowledge leaves the agency, breaking continuity with previous reports
+  \pause
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Or we do the wrong analysis}
+\begin{center}
+\Huge \textbf{Sometimes analyses are done at the whim of an analyst or two and not tied to the needs of decision makers or stakeholders}
+\end{center}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{irrelevant}}
+\begin{frame}[plain]
+\frametitle{Irrelevant}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Example}
+\begin{center}
+\textbf{The state chief school officer asks: \\ 
+``Do our state bilingual-bicultural programs provide any benefit to our students? Should we focus on ESL more or keep our BLBC programs?''}
+\end{center}
+\vspace{.1in}
+Instead we answer:
+\begin{itemize}
+  \item Our ELL students are doing better than last year.
+  \item National research is inconclusive on these programs.
+  \item Our data shows participation is up in BLBC programs.
+  \item We found a researcher to help with this in six months.
+\end{itemize}
+\end{frame}
+
+
+\subsection{What is the solution?}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{openfield}}
+\begin{frame}[plain]
+\frametitle{Open Source Tools}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rscreenshot}}
+\begin{frame}[plain]
+\frametitle{R}
+\end{frame}
+}
+
+
+\begin{frame}
+\frametitle{R As the Solution}
+  \begin{columns}
+  \column[t]{.5\textwidth}
+  Objections to Data Analysis
+  \begin{itemize}
+  \item Costly
+  \item Slow and Time Consuming
+  \item Technical and complex
+  \item Opaque and not actionable
+  \end{itemize}
+  \column[t]{.5\textwidth}
+  The R Solution
+  \begin{itemize}
+  \item R is free and open source
+  \item R allows reproducible and sharable analysis across researchers
+  \item R can be scripted to do common tasks
+  \item R is a lingua franca that standardizes common tasks
+  \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Caveats}
+\begin{center}
+\Large But wait...? Isn't R?
+\end{center}
+\end{frame}
+
+% But wait, isn't R difficult to use?
+% Isn't open source software buggy?
+% 
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{maze}}
+\begin{frame}[plain]
+\frametitle{Confusing?}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{buggy}}
+\begin{frame}[plain]
+\frametitle{Full of Bugs?}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{hummer}}
+\begin{frame}[plain]
+\frametitle{Inefficient?}
+\end{frame}
+}
+
+
+\begin{frame}
+\frametitle{The Truth}
+\begin{itemize}
+   \item The short answer is no. 
+   \pause
+   \item R has a high startup cost, but we are working to bring that down. 
+   \pause
+   \item R has some quirks, but all software does.
+   \pause
+   \item And, R can be amazingly more efficient through collaboration and sharing of code and tools.
+\end{itemize}
+\end{frame}
+
+
+\section{Introduction to R}
+\label{sec:intro-r}
+
+\subsection{What is R?}
+\label{sec:what-r}
+
+
+\begin{frame}
+  \begin{itemize}
+  \item R is an Open Source (and freely available) environment for statistical computinga nd graphics
+  \item Available for Windows, Mac OS X, and Linux
+  \item R is being actively developed with two major releases per year and dozens of releases of add on packages
+  \item R can be extended with 'packages' that contain data, code, and documentation to add new functionality
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{More Support for R}
+  \begin{itemize}
+  \item R is a common tool among data experts at major universities
+  \item No need to go through procurement, R can be installed in any environment on any machine and used with no licensing or agreements needed
+  \item R source code is very readable to increase transparency of analyses
+  \item R code is easily borrowed from and shared with others
+  \item R is incredibly flexible and can be adapted to specific local needs
+  \item R is under active development, improving greatly, and supported wildly by both professional and academic developers
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Using R}
+  \begin{columns}
+  \column[t]{.5\textwidth}
+  \begin{itemize}
+  \item R can be used with an excellent Integrated Development Environment 
+  \item RStudio makes many of the basic tasks in R much easier like
+    \begin{enumerate}
+    \item Importing data
+    \item Previewing plots
+    \item Version control 
+    \item Collaboration
+    \end{enumerate}
+  \item Greatly increases ease of use
+  \end{itemize}
+\column[t]{.5\textwidth}
+  \begin{center}
+  \begin{figure}
+  \includegraphics{rstudio-windows.png}
+  \end{figure}
+  \end{center}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pros and Cons of R}
+  \begin{columns}
+  \column[t]{.5\textwidth}
+  Pros of \textbf{R}
+  \begin{itemize}
+  \item Open source and freely available on all platforms
+  \item Scripting for reproducible and transparent analyses
+  \item Extensible to fit skills, needs, and cutting edge techniques
+  \item Excellent graphical and output capabilities
+  \end{itemize}
+  \column[t]{.5\textwidth}
+  Cons
+  \begin{itemize}
+  \item Steep learning curve and command line interface
+  \item Requires specific inputs to get desired results
+  \item Unforgiving of misspecification of inputs
+  \item Data input can be tricky at first
+  \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{How does it help?}
+\begin{itemize}
+  \item R can be built to do what you want without waiting for a vendor to upgrade software
+  \pause
+  \item All add-ons and functionality to R are free and shared immediately
+  \pause 
+  \item Student Growth Percentiles (SGP) package is available for growth modeling now
+  \pause 
+  \item It standardizes processes and makes them more transparent
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Standardization is Good}
+\begin{itemize}
+  \item By standardizing common data tasks staff are freed up to do other tasks
+  \pause
+  \item Wisconsin is using R to calculate AYP directly from LDS dataset
+  \pause
+  \item One script, one run, all reports and error checks run--saving weeks of work
+  \pause
+  \item Easy to understand how calculation is done protecting against discontinuity if staff turnsover
+  \pause
+  \item Other reports and data analyses are being standardized--quality checks on LDS data, etc.
+\end{itemize}
+\end{frame}
+  
+<<echo=F,results=hide>>=
+##Make images
+#Make a hexbin scatterplot for big data
+student_long$proflvl<-factor(student_long$proflvl,
+              levels=c('below basic','basic','proficient','advanced'))
+pdf(file='img/hex.pdf')
+qplot(attday,readSS,data=student_long,geom='hex')+facet_wrap(~grade)+geom_smooth(color='black')+opts(title='Faceted Hex',axis.title.x=theme_text(size=18),axis.text.x=theme_text(size=12),axis.title.y=theme_text(size=18,angle=90),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank())
+dev.off()
+#Make a crosstab plot shaded by disproportionality
+library(vcd)
+varnames<-c('FRL Status','Proficiency')
+plotsub<-subset(student_long,year=='2000')
+pdf(file='img/crosstab.pdf')
+mosaictabs.label(plotsub,plotsub$econ,plotsub$proflvl,varnames,'FRL and Proficiency','Dummy Data 2012')
+dev.off()
+rm(plotsub,TABS,TABSPROPORTIONS,varnames)
+#Conditional density
+student_long$econ<-factor(student_long$econ)
+condens<-ggplot(subset(student_long,year=='2001' & grade==4),aes(x=readSS,fill=as.factor(econ)))
+condens<-condens+geom_histogram(aes(fill=econ),binwidth=3,position='fill')+xlab('Reading Score')
+condens<-condens+scale_fill_brewer(name='FRL Status','Dark2')+xlim(250,600)+ylab('Proportion')
+condens<-condens+ opts(title = "Conditional Density of Test Scores") 
+pdf(file='img/condensity.pdf')
+condens+opts(axis.title.x=theme_text(size=18),axis.text.x=theme_text(size=14),axis.title.y=theme_text(size=18,angle=90),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank())
+dev.off()
+#Heatmap
+heatmap<-ggplot(subset(student_long,year=='2001' & grade==4),aes(readSS,mathSS))
+heatmap<-heatmap+stat_bin2d(bins=80)+geom_smooth(color='black')+opts(title='Heatmap of Test Scores')
+pdf(file='img/heatmap.pdf')
+heatmap+xlab('Reading Score')+ylab('Math Score')+opts(axis.title.x=theme_text(size=18),axis.text.x=theme_text(size=14),axis.title.y=theme_text(size=18,angle=90),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank())
+dev.off()
+@
+
+
+\subsection{What can R do?}
+
+\begin{frame}
+\frametitle{Visualization}
+\vspace{.2in}
+
+\large One of the major strengths of R is its ability to create informative and compelling visualizations of data.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Examples of R Figures}
+  \begin{figure}
+  \begin{center}
+\includegraphics[width=.3\textwidth]{hex} 
+\includegraphics[width=.3\textwidth]{crosstab} \\
+\includegraphics[width=.3\textwidth]{condensity}  
+\includegraphics[width=.3\textwidth]{heatmap}
+  \end{center}
+  \end{figure}
+\end{frame}
+
+\subsection{R Examples}
+\label{sec: rexamp}
+
+\begin{frame}
+\frametitle{Inference Trees}
+<<echo=F,results=hide>>=
+library(party)
+bonf<-ctree_control(teststat=c('max'),testtype=c('Bonferroni'),mincriterion=0.99,minsplit=100,maxdepth=3)
+z1<-ctree(readSS~black+hisp+asian+indian+white+ell+disab+econ      +attday,data=subset(student_long,year=='2000',grade=5),controls=bonf)
+pdf(file='img/classtree.pdf',width=6,height=5)
+plot(z1,type='simple',main="Splitting Categorical Data")
+dev.off()
+@
+\begin{center}
+\vspace{-.1in}
+\includegraphics[width=.8\textwidth]{classtree}
+\end{center}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Easy Code for Plot}
+Code to make this plot:
+\vspace{.1in}
+<<echo=T,results=verbatim,eval=F>>=
+z1<-ctree(readSS~black+hisp+asian+indian+white+ell+disab+econ
+          +attday,data=subset(student_long,year=='2000',grade=5),
+          controls=bonf)
+plot(z1,type='simple',main="Splitting Categorical Data")
+@
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Visual Crosstabs}
+<<echo=F, results=hide>>=
+plotsub<-subset(student_long,year=='2001' & grade==6)
+varnames<-c('Female','Proficiency')
+pdf(file='img/crosstab2.pdf',height=5,width=6)
+mosaictabs.label(plotsub,plotsub$female,plotsub$proflvl,varnames,'Gender and Proficiency','Dummy Data 2012')
+dev.off()
+@
+\vspace{.1in}
+\includegraphics[width=.85\textwidth]{crosstab2}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{R Code}
+Code for this plot that uses `mosaictabs' function from the LDS\_TOOLS package
+\vspace{.1in}
+<<echo=T,results=verbatim,eval=F>>=
+plotsub<-subset(student_long,year=='2001' & grade==6)
+varnames<-c('Female','Proficiency')
+mosaictabs.label(plotsub,plotsub$female,plotsub$proflvl,
+                varnames,'Gender and Proficiency','Dummy Data 2012')
+@
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Maps}
+\begin{center}
+\scalebox{.75}{
+\includegraphics[width=.85\textwidth]{FRL2010}
+}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Heatmap}
+\begin{center}
+\scalebox{.75}{
+\includegraphics[width=.85\textwidth]{heatmap}
+}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conditional Density}
+\begin{center}
+\scalebox{.75}{
+\includegraphics[width=.85\textwidth]{condensity}
+}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Faceted Hex}
+\vspace{-.1in}
+\begin{center}
+\scalebox{.75}{
+\includegraphics[width=.85\textwidth]{hex}
+}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Polished Scatter}
+\begin{center}
+\scalebox{.9}{
+\includegraphics[width=.85\textwidth]{occupationscatter}
+}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Longitudinal Data}
+\vspace{-.1in}
+\begin{center}
+\scalebox{.85}{
+\includegraphics[width=.95\textwidth]{g3belowproficientreadingscores}
+}
+\end{center}
+\end{frame}
+
+<<echo=F, results=hide>>=
+samp<-with(student_long,sample(stuid[year=='2000' &grade==4],20))
+grades<-c(3,4,5,6,7,8) # grade vector
+g<-length(grades) # counter
+LOSS<-rep(200,6) #Lowest obtainable scale score by grade
+HOSS<-rep(750,6) # highest obtainable scale score by grade
+basic<-c(320,350,370,390,420,440) # basic level base scores
+minimal<-basic-50 # minimal level floor
+prof<-c(380,410,430,450,480,500) # proficient level floor
+adv<-c(480,510,530,550,580,600) # advanced level floor
+
+z<-profpoly(grades,LOSS,minimal,basic,proficient,advanced,HOSS) # generate poly
+z<-z+ylab('Scale Scores')+xlab('Grades')+xlim(c(3,8)) # label axes
+z<-z+opts(title='Example of Proficiency  Polygon',axis.title.x=theme_text(size=18),axis.title.y=theme_text(size=18,angle=90),axis.text.x=theme_text(size=14),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank()) # produce options for presentation sized labels on plot
+pdf(file='img/proficiencypolygon.pdf',height=5,width=6)
+z
+dev.off()
+@
+
+\begin{frame}
+\frametitle{Proficiency Polygon}
+\vspace{-.13in}
+\begin{center}
+\scalebox{.82}{
+\includegraphics[width=.95\textwidth]{proficiencypolygon}
+}
+\end{center}
+\end{frame}
+
+<<echo=F,results=hide>>=
+plotsub<-subset(student_long,stuid %in% samp) # make sample of students' complete test history
+a<-qplot(as.factor(grade),mathSS,data=plotsub)+facet_wrap(~stuid)+geom_smooth(aes(group=1),color='purple',size=1) # plot students and add smoother to scores
+a<-a+xlab('Grades')+ylab('Math Score') # add axes labels
+a<-a+opts(title='Faceting Longitudinal Data',axis.title.x=theme_text(size=18),axis.title.y=theme_text(size=18,angle=90),axis.text.x=theme_text(size=14),axis.text.y=theme_text(size=10),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank()) # good options for presentation quality
+pdf(file='img/facetstudents.pdf',height=5,width=6)
+a
+dev.off()
+@
+
+
+\begin{frame}
+\frametitle{Individual Growth Trajectories}
+\vspace{-.2in}
+\begin{center}
+\scalebox{.85}{
+\includegraphics[width=.95\textwidth]{facetstudents}
+}
+\end{center}
+\end{frame}
+
+<<echo=F, results=hide>>=
+z<-profpoly.df(grades,LOSS,minimal,basic,proficient,advanced,HOSS) # create proficieny polygon data frame
+p<-ggplot(plotsub,aes(x=grade,y=mathSS))+geom_point()+facet_wrap(~stuid) # draw points and add facet
+q<-p+layer(geom='polygon',data=z,mapping=aes(x=gradeP,y=vals,fill=prof,group=prof))+scale_fill_brewer('Proficient',type='seq') # layer on the polygon
+q<-q+layer(geom='point',data=plotsub,mapping=aes(x=grade,y=mathSS))+facet_wrap(~stuid)
+# polygon overwrote the points so now we redraw them
+q<-q+layer(geom='smooth',data=plotsub,mapping=aes(x=grade,y=mathSS,group=1),colour='purple',size=1) # add a smoother to connect points
+q<-q+opts(title='Faceting Longitudinal Data',axis.title.x=theme_text(size=18),axis.title.y=theme_text(size=18,angle=90),axis.text.x=theme_text(size=14),axis.text.y=theme_text(size=10),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank()) 
+# good options for presentation quality
+pdf(file='img/facetstudentspoly.pdf',height=5,width=6)
+q
+dev.off()
+@
+
+% Bug in Sweave compiling this chart in Sweave environment
+% Try to reproduce and report bugfix to ggplot2 and Sweave teams
+
+
+<<echo=F,results=hide>>=
+#Build effect size plots
+# samp<-sample(student_long$stuid,500) 
+# modsamp<-subset(student_long,stuid %in% samp) #munge it up for imprecision
+# mod2<-lm(mathSS~teachq+ability+ell+disab+econ,data=modsamp)
+# modres2<-cbind(as.data.frame(coef(mod2)),as.data.frame(confint(mod2))) 
+# modsamp2<-subset(modsamp,select=c('mathSS','teachq','ability','ell','disab','econ'))
+# names(modres2)<-c('point','min','max')
+# modres2$varmean<-apply(modsamp2,2,mean)
+# modres2$varsd<-apply(modsamp2,2,sd)
+# modres2$effectlow<-(modres2$varmean-modres2$varsd)*modres2$point
+# modres2$effecthigh<-(modres2$varmean+modres2$varsd)*modres2$point
+# modres2$effect<-(modres2$varmean)*modres2$point
+# modresplot2<-modres2[2:6,] #cut out outliers for plot
+# modresplot2$names<-rownames(modresplot2)
+# effplot<-ggplot(modresplot2,aes(names,effect,ymin=effectlow,ymax=effecthigh))+geom_errorbar(width=.2)+geom_point()
+# effplot<-effplot+xlab('Variable')+ylab('Scale Score Points')+theme_bw()
+# effplot<-effplot+geom_hline(yintercept=0,colour='red',size=1)+opts(title='Effect Size',plot.title=theme_text(size=20),axis.title.x=theme_text(size=16),axis.title.y=theme_text(size=16,angle=90))
+# pdf(file='img/effectsize.pdf',width=7,height=5)
+# print(effplot)
+# dev.off()
+@
+
+
+\begin{frame}
+\frametitle{Individual Growth Trajectories}
+\vspace{-.1in}
+\begin{center}
+\scalebox{.8}{
+\includegraphics[width=.9\textwidth]{facetstudentspoly}
+}
+\end{center}
+\end{frame}
+
+<<echo=F, reults=hide>>=
+# Note that this model is WRONG!
+# It is only for demonstration purposes
+samp<-sample(student_long$stuid,500) 
+modsamp<-subset(student_long,stuid %in% samp) #munge it up for imprecision
+mod1<-lm(readSS~female+race+econ+grade+year,data=modsamp) # use reduced data
+modres<-cbind(as.data.frame(coef(mod1)),as.data.frame(confint(mod1))) #extract model params
+names(modres)<-c('point','min','max') #rename them
+modresplot<-modres[2:8,] #cut out outliers for plot
+coefplot<-ggplot(modresplot,aes(rownames(modresplot),point,ymin=min,ymax=max))
+coefplot<-coefplot+geom_errorbar(width=.2)+geom_point()
+coefplot<-coefplot+xlab('Variable')+ylab('Scale Score Points')+theme_bw()
+coefplot<-coefplot+geom_hline(yintercept=0,colour='red',size=1)+opts(title='Coefficient Plot',plot.title=theme_text(size=20),axis.title.x=theme_text(size=16),axis.title.y=theme_text(size=16,angle=90))#
+pdf(file='img/coefplot1.pdf',width=7,height=5)
+coefplot
+dev.off()
+@
+
+\begin{frame}
+\frametitle{Communicate Statistical Models}
+\vspace{.05in}
+\begin{center}
+\scalebox{.9}{
+\includegraphics[width=.9\textwidth]{coefplot1}
+}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Communicate Statistical Models II }
+\vspace{.05in}
+\begin{center}
+\scalebox{.9}{
+\includegraphics[width=.9\textwidth]{effectsize}
+}
+\end{center}
+\end{frame}
+
+
+\subsection{Getting StaRted}
+\label{sec: start}
+
+\begin{frame}[containsverbatim]
+\frametitle{The Command Line}
+\begin{itemize}
+\item R can be tricky because it uses command lines.
+\item This is powerful, but requires a learning curve.
+\item Some simple calculations can give a feel for how R works
+\end{itemize}
+<<echo=T,results=verbatim>>=
+2+2
+7*4
+exp(3)
+pi
+@
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Deconstruct R Commands}
+<<echo=T,results=verbatim>>=
+summary(student_long[,28:30])
+@
+\begin{itemize}
+  \item \textbf{summary} is the function
+  \item \textbf{student\_ long} is the data object
+  %\item \textbf{[,27:31]} is an operator that specified conditions to operate under
+\end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Simple R Operations}
+<<echo=T,results=verbatim>>=
+with(student_long,mean(readSS[year=='2001' & grade==4]))
+@
+<<echo=T,results=verbatim>>=
+with(student_long,median(readSS[year=='2001' & grade==4]))
+@
+<<echo=T,results=verbatim>>=
+with(student_long,max(readSS[year=='2001' & grade==4]))
+@
+<<echo=T,results=verbatim>>=
+with(student_long,min(readSS[year=='2001' & grade==4]))
+@
+<<echo=T,results=verbatim>>=
+with(student_long,summary(readSS[year=='2001' & grade==4]))
+@
+\end{frame}
+
+  
+\begin{frame}[containsverbatim]
+\frametitle{Crosstabs}
+Let's test for balance among some categories of students 
+<<echo=T,results=verbatim>>=
+with(subset(student_long,year=='2001' 
+            & grade==3),table(female,race))
+@
+<<echo=T,results=verbatim>>=
+#As proportions
+with(subset(student_long,year=='2001' 
+            & grade==3),round(prop.table
+            (table(female,race))*100),4)
+@
+\end{frame}
+
+\begin{frame}
+\frametitle{Crosstabs}
+We can even output the results of R commands into a print-ready format. As we have below.
+<<echo=F,results=tex>>=
+library(xtable)
+a<-xtable(with(subset(student_long,year=='2001' 
+            & grade==3),round(prop.table
+            (table(female,race))*100),4))
+print(a)
+@
+\end{frame}
+
+\section{More Advanced Functions}
+\subsection{Analysis}
+
+\begin{frame}
+\frametitle{Doing More than the Basics}
+  \begin{itemize}
+  \item R can routinize basic functions like tables, crosstabs, and visualization of data
+  \item R can also be extended to do more advanced analyses like multilevel modeling, spatial error modeling, Bayesian data analysis, forecasting, and simulation
+  \item R can do advanced graphical functions as well
+  \item R can even be expanded to incorporate additional programming languages like Python, C++, and Java
+  \end{itemize}
+\textbf{The downside of this is that these functions can have a steep learning curve.}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{ANOVA}
+We can also do statistical tests using both Bayesian and Frequentist methods.
+<<echo=F,results=hide>>=
+novaset<-subset(student_long,year=='2001' & grade==6)
+@
+<<echo=T,results=verbatim>>=
+nova1<-aov(readSS~female*race*econ,data=novaset)
+summary(nova1)
+@
+<<echo=F,results=hide>>=
+rm(novaset)
+@
+\end{frame}
+
+\begin{frame}
+\frametitle{Pretty Output}
+We can also do print-ready model outputs with R's extensible formatting
+<<echo=F, results=tex>>=
+print(xtable(summary(nova1)))
+@
+\end{frame}
+
+\subsection{Linear Model Example}
+
+\begin{frame}[containsverbatim,allowframebreaks,fragile]
+\frametitle{A simple OLS Model}
+<<echo=T, results=verbatim>>=
+mod1<-lm(readSS~female*race*econ+grade*year,data=student_long)
+summary(mod1)
+@
+\end{frame}
+
+\begin{frame}
+\frametitle{Model Evaluation}
+<<echo=F,results=hide>>=
+fitted<-mod1$fitted.values
+resid<-mod1$residuals
+actual<-student_long$readSS
+modoutput<-as.data.frame(cbind(fitted,resid,actual))
+pdf(file='img/residplot.pdf',width=6,height=5)
+qplot(fitted,resid,geom='point',alpha=I(.1),data=modoutput[sample(nrow(modoutput), size=10000), ])+geom_smooth(color='red',size=I(1.3))+opts(title="Residuals vs. Observed Values",axis.title.x=theme_text(size=18),axis.text.x=theme_text(size=14),axis.title.y=theme_text(size=18,angle=90),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank())
+dev.off()
+@
+\begin{center}
+\vspace{-.1in}
+\includegraphics[width=.8\textwidth]{residplot}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Model Evaluation Part 2}
+<<echo=F,results=hide>>=
+col1<-qplot(fitted,actual,geom='point',alpha=I(.1),data=modoutput[sample(nrow(modoutput), size=10000), ])+geom_smooth(color='red',size=1.3)+xlim(c(350,650))+ylim(c(200,750))+geom_abline(intercept=0,slope=1,size=1.3)+opts(title='Fitted Values v. Observed Values')
+png(file='fittedplot.png',width=1024,height=768,units='px')
+col1+opts(axis.title.x=theme_text(size=18),axis.text.x=theme_text(size=14),axis.title.y=theme_text(size=18,angle=90),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank())
+dev.off()
+rm(modoutput)
+@
+\vspace{-.1in}
+\begin{center}
+\includegraphics[width=.8\textwidth]{fittedplot}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Better Fitting}
+Using advanced techniques we can greatly improve our model fit over the OLS model.
+<<echo=F,results=hide>>=
+library(lme4)
+multidata<-student_long[sample(nrow(student_long), size=200000), ] # Sample the data
+mlmod<-lmer(readSS~female*econ*race+grade*year+disab+ell+(1|stuid)+(1|schid),data=multidata) #Estimate model
+#print(mlmod,corr=FALSE) #output model
+@
+<<echo=F,results=hide>>=
+multidata$yhat<-fitted(mlmod) # Save fitted values
+plotsamp<-multidata[sample(nrow(multidata),size=50000),] # Random sample to reduce for plotting
+col2<-qplot(yhat,readSS,data=plotsamp,geom='point',alpha=I(.05))+geom_smooth(color='red',size=1.3)+geom_abline(intercept=0,slope=1,size=1.3)+xlab('fitted')+ylab('actual')+opts(title='Multilevel Model')+xlim(c(350,650))+ylim(c(200,750)) #Store output
+@
+
+<<echo=F,results=hide>>=
+png(file='mlfitted.png',width=1024,height=768,units='px')
+col2+opts(axis.title.x=theme_text(size=18),axis.text.x=theme_text(size=14),axis.title.y=theme_text(size=18,angle=90),axis.text.y=theme_text(size=14),plot.title=theme_text(size=20),panel.grid.minor=theme_blank(),axis.ticks=theme_blank())
+dev.off()
+@
+<<echo=F,results=hide>>=
+library(gridExtra)
+png(file='OLSandMLM.png',width=1200,height=600,units='px')
+grid.arrange(col1,col2,main="Comparing Two Models",ncol=2)
+dev.off()
+rm(multidata,plotsamp)
+@
+\vspace{-.1in}
+\begin{center}
+\includegraphics[height=.65\paperheight]{mlfitted}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Compare OLS and Mixed Effects}
+A simple mixed-effects model estimated with an R package can outperform the simple OLS without much additional effort
+\vspace{-.1in}
+\begin{center}
+\includegraphics[height=.6\paperheight]{OLSandMLM}
+\end{center}
+\end{frame}
+
+
+\section{Putting It Together to Collaborate}
+
+\begin{frame}
+\frametitle{Some stuff}
+The advantage of R comes when we specialize to develop \textcolor{red}{advanced tools} that are compatible across our \textcolor{blue}{very similar datasets.} 
+\end{frame}
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{hackathon}}
+\begin{frame}[plain]
+\frametitle{Collaborative Development}
+\end{frame}
+}
+
+
+\subsection{Same Data, Similar Analyses}
+
+\begin{frame}
+\frametitle{Leverage Similar Data}
+\Large Why can we do this?
+\begin{itemize}
+  \item We all share similar data with similar attributes and similar reporting needs
+  \item Standardizing on our analysis language makes applying analysis from one place to another easy due to data similarities
+  \item \Large \textbf{\textcolor{green}{Build it.} \textcolor{blue}{Share it.} \textcolor{red}{Use it.}}
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{Coordinating and Social Coding}
+\begin{frame}
+\frametitle{GitHub}
+\Large \textbf{\textcolor{blue}{GitHub}} \normalsize provides an excllent way to do this. 
+\vspace{.5in}
+\begin{center}
+\includegraphics[width=.45\textwidth]{GitHublogo}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{LDS\_TOOLS}
+\vspace{.18in}
+\Large  \textcolor{blue}{\href{https://github.com/jknowles/LDS_TOOLS}{https://github.com/jknowles/LDS\_TOOLS}}
+\begin{itemize}
+  \item Uses the \textbf{`git'} version control system to track collaborative coding on the same source document
+  \item Free and open source coding environment that plays well with RStudio
+  \item No need to contribute, provides easy way to access work of others
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Open Source Analysis Code}
+\begin{itemize}
+  \item LDS\_TOOLS is a fledgling effort to open source many of the graphics and analyses from earlier in this presentation
+  \item Make R code and \LaTeX{} code available to be applied to other SEA and LEA data
+  \item Packaged with a dummy dataset representing common educational data attributes for testing and sharing 
+  \item Share visualization techniques, statistical models, and even full reports
+  \item Plug and play--change the variables to match your data and produce the same visualization, report, analysis
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{LDS\_TOOLS Available Now}
+You can visit online at: \textcolor{blue}{\href{https://github.com/jknowles/LDS_TOOLS}{https://github.com/jknowles/LDS\_TOOLS}}
+\vspace{.1in}
+\begin{columns}
+  \column[t]{.5\textwidth}
+  \textbf{Available Tools:}
+    \begin{itemize}
+      \item Improved mosaic plots
+      \item Gantt charts for project planning
+      \item Proficiency polygons for assessments
+      \item Convenience functions for education data
+    \end{itemize}
+  \column[t]{.5\textwidth}
+  \textbf{Planned Tools:}
+    \begin{itemize}
+      \item Easy to make maps
+      \item Data mining and statistical modeling routines
+      \item Pre-built data quality reports
+      \item Summary reports for NSC, Assessment, and Enrollment data
+    \end{itemize}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Who can get involved?}
+\Large Current staff can use these tools, and even contribute to them
+\normalsize
+\begin{itemize}
+  \item Analysts with a couple of days to learn basic R skills
+  \item Anyone with programming skills
+  \item University partners
+  \item The R Community
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Example}
+\vspace{.6in}
+\large This entire presentation was created with R, \LaTeX{} and is available online at GitHub to be edited, modified, and reused. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Tools}
+
+\begin{itemize}
+  \item \textbf{R} (\href{http://cran.r-project.org/}{http://cran.r-project.org/})
+    \begin{itemize}
+    \item An open source statistics package that is freely available for all platforms.
+    \end{itemize}
+  \item \textbf{RStudio} (\href{http://www.rstudio.org/}{http://www.rstudio.org/})
+    \begin{itemize}
+    \item An enhanced front-end for R. An Integrated Development Environment (\textsc{IDE}) for statistical programming.
+    \end{itemize}
+  \item \textbf{Quantum GIS} (\href{http://www.qgis.org/}{http://www.qgis.org/})
+    \begin{itemize}
+    \item A GIS package that provides most of the functionality of ArcGIS but is freely available.
+    \end{itemize}
+  \item \textbf{GeoDa} (\href{http://geodacenter.asu.edu/}{http://geodacenter.asu.edu/})
+    \begin{itemize}
+    \item A geo-spatial statistics package for analyzing clustering and spatial correlation of datasets.
+    \end{itemize}
+  \item \textbf{\LaTeX{}} (\href{http://www.latex-project.org/}{http://www.latex-project.org/})
+    \begin{itemize}
+    \item A typesetting and document building tool that integrates with R.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tutorials}
+\begin{itemize}
+  \item R Reference (\href{http://www.statmethods.net/}{http://www.statmethods.net/})
+  \item First R Commands to Learn (\href{https://github.com/hadley/devtools/wiki/vocabulary}{https://github.com/hadley/devtools/wiki/vocabulary})
+  \item Beginning with \LaTeX{} (\href{http://en.wikibooks.org/wiki/LaTeX}{http://en.wikibooks.org/wiki/LaTeX})
+  \item Quantum GIS Guide (\href{http://qgis.org/en/documentation/manuals.html}{http://qgis.org/en/documentation/manuals.html})
+  \item R Graph Gallery (\href{http://addictedtor.free.fr/graphiques/}{http://addictedtor.free.fr/graphiques/})
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
