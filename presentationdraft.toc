@@ -1,19 +1,21 @@
 \beamer@endinputifotherversion {3.12pt}
-\beamer@sectionintoc {1}{What is Policy Relevant Analysis?}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{Defining Terms}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{The Problem}{15}{0}{1}
-\beamer@sectionintoc {2}{Extracting Meaning from Data}{35}{0}{2}
-\beamer@subsectionintoc {2}{1}{Why is Data Analysis So Important?}{36}{0}{2}
-\beamer@subsectionintoc {2}{2}{Barriers to Data Analysis}{41}{0}{2}
-\beamer@subsectionintoc {2}{3}{What is the solution?}{59}{0}{2}
-\beamer@sectionintoc {3}{Introduction to R}{71}{0}{3}
-\beamer@subsectionintoc {3}{1}{What is R?}{72}{0}{3}
-\beamer@subsectionintoc {3}{2}{What can R do?}{86}{0}{3}
-\beamer@subsectionintoc {3}{3}{R Examples}{89}{0}{3}
-\beamer@subsectionintoc {3}{4}{Getting StaRted}{106}{0}{3}
-\beamer@sectionintoc {4}{More Advanced Functions}{112}{0}{4}
-\beamer@subsectionintoc {4}{1}{Analysis}{113}{0}{4}
-\beamer@subsectionintoc {4}{2}{Linear Model Example}{117}{0}{4}
-\beamer@sectionintoc {5}{Putting It Together to Collaborate}{126}{0}{5}
-\beamer@subsectionintoc {5}{1}{Same Data, Similar Analyses}{129}{0}{5}
-\beamer@subsectionintoc {5}{2}{Coordinating and Social Coding}{131}{0}{5}
+\beamer@sectionintoc {1}{What is Policy Relevant Analysis?}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Defining Terms}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{The Problem}{16}{0}{1}
+\beamer@sectionintoc {2}{Extracting Meaning from Data}{33}{0}{2}
+\beamer@subsectionintoc {2}{1}{Why is Data Analysis So Important?}{34}{0}{2}
+\beamer@subsectionintoc {2}{2}{Barriers to Data Analysis}{40}{0}{2}
+\beamer@subsectionintoc {2}{3}{What is the solution?}{57}{0}{2}
+\beamer@sectionintoc {3}{Introduction to R}{69}{0}{3}
+\beamer@subsectionintoc {3}{1}{What is R?}{70}{0}{3}
+\beamer@subsectionintoc {3}{2}{What can R do?}{81}{0}{3}
+\beamer@subsectionintoc {3}{3}{R Examples}{84}{0}{3}
+\beamer@subsectionintoc {3}{4}{Getting StaRted}{101}{0}{3}
+\beamer@subsectionintoc {3}{5}{Advanced Extensions of R}{106}{0}{3}
+\beamer@sectionintoc {4}{Policy Analysis Tools}{108}{0}{4}
+\beamer@subsectionintoc {4}{1}{Statistical Modeling}{109}{0}{4}
+\beamer@subsectionintoc {4}{2}{Linear Model Example}{112}{0}{4}
+\beamer@sectionintoc {5}{Putting It Together to Collaborate}{121}{0}{5}
+\beamer@subsectionintoc {5}{1}{Same Data, Similar Analyses}{124}{0}{5}
+\beamer@subsectionintoc {5}{2}{Coordinating and Social Coding}{126}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{132}{0}{6}

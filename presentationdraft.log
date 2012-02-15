@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.3)  13 FEB 2012 20:17
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.3)  14 FEB 2012 23:06
 entering extended mode
 **C:/Users/Jared/mis-presentation/presentationdraft.tex
 (C:/Users/Jared/mis-presentation/presentationdraft.tex
@@ -1039,7 +1039,7 @@ ntation\presentationdraft.toc) [2
 
 ] (C:\Users\Jared\mis-presentation\presentationdraft.toc) [3
 
-] [4
+] (C:\Users\Jared\mis-presentation\presentationdraft.toc) [4
 
 ] [5
 
@@ -1059,51 +1059,71 @@ ntation\presentationdraft.toc) [2
 
 ] [13
 
-] <./img/jen1.jpg, id=529, 903.375pt x 903.375pt>
+] [14
+
+] <./img/jen1.jpg, id=593, 903.375pt x 903.375pt>
 File: ./img/jen1.jpg Graphic file (type jpg)
 <use ./img/jen1.jpg>
-Package pdftex.def Info: ./img/jen1.jpg used on input line 151.
+Package pdftex.def Info: ./img/jen1.jpg used on input line 155.
 (pdftex.def)             Requested size: 364.19536pt x 364.19696pt.
-[14
+[15
 
  <C:/Users/Jared/mis-presentation/img/jen1.jpg>]
-C:/Users/Jared/mis-presentation/presentationdraft.tex:155: Too many }'s
+C:/Users/Jared/mis-presentation/presentationdraft.tex:159: Too many }'s
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 
 (C:\Users\Jared\mis-presentation\presentationdraft.toc)
-[15
+[16
 
 ]
-<./img/jen.jpg, id=603, 291.489pt x 291.489pt>
+<./img/jen.jpg, id=669, 291.489pt x 291.489pt>
 File: ./img/jen.jpg Graphic file (type jpg)
 
 <use ./img/jen.jpg>
-Package pdftex.def Info: ./img/jen.jpg used on input line 163.
+Package pdftex.def Info: ./img/jen.jpg used on input line 167.
 (pdftex.def)             Requested size: 364.19536pt x 364.21802pt.
 
-[16
-
- <C:/Users/Jared/mis-presentation/img/jen.jpg>]
 [17
 
-]
+ <C:/Users/Jared/mis-presentation/img/jen.jpg>]
 [18
 
 ]
 [19
 
 ]
+<./img/fast.jpg, id=751, 3212.0pt x 2132.96875pt>
+File: ./img/fast.jpg Graphic file (type jpg)
+
+<use ./img/fast.jpg>
+Package pdftex.def Info: ./img/fast.jpg used on input line 195.
+(pdftex.def)             Requested size: 364.19536pt x 241.82005pt.
+
 [20
 
-]
+ <C:/Users/Jared/mis-presentation/img/fast.jpg>]
+<./img/laserfocus.jpg, id=776, 481.8pt x 350.7504pt>
+File: ./img/laserfocus.jpg Graphic file (type jpg)
+
+<use ./img/laserfocus.jpg>
+Package pdftex.def Info: ./img/laserfocus.jpg used on input line 202.
+(pdftex.def)             Requested size: 364.19536pt x 265.13873pt.
+
 [21
 
-]
+ <C:/Users/Jared/mis-presentation/img/laserfocus.jpg>]
+<./img/horseshoes2.jpg, id=801, 1606.0pt x 1204.5pt>
+File: ./img/horseshoes2.jpg Graphic file (type jpg)
+
+<use ./img/horseshoes2.jpg>
+Package pdftex.def Info: ./img/horseshoes2.jpg used on input line 209.
+(pdftex.def)             Requested size: 364.19536pt x 273.13278pt.
+
 [22
 
-]
+ <C:/Users/Jared/mis-presentation/img/horseshoes2.jpg>]
 [23
 
 ]
@@ -1131,263 +1151,242 @@ Package pdftex.def Info: ./img/jen.jpg used on input line 163.
 [31
 
 ]
-<./img/fast.jpg, id=1051, 3212.0pt x 2132.96875pt>
-File: ./img/fast.jpg Graphic file (type jpg)
-
-<use ./img/fast.jpg>
-Package pdftex.def Info: ./img/fast.jpg used on input line 253.
-(pdftex.def)             Requested size: 364.19536pt x 241.82005pt.
-
 [32
 
- <C:/Users/Jared/mis-presentation/img/fast.jpg>]
-<./img/laserfocus.jpg, id=1076, 481.8pt x 350.7504pt>
-File: ./img/laserfocus.jpg Graphic file (type jpg)
-
-<use ./img/laserfocus.jpg>
-Package pdftex.def Info: ./img/laserfocus.jpg used on input line 260.
-(pdftex.def)             Requested size: 364.19536pt x 265.13873pt.
-
+]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [33
 
- <C:/Users/Jared/mis-presentation/img/laserfocus.jpg>]
-<./img/horseshoes2.jpg, id=1100, 1606.0pt x 1204.5pt>
-File: ./img/horseshoes2.jpg Graphic file (type jpg)
-
-<use ./img/horseshoes2.jpg>
-Package pdftex.def Info: ./img/horseshoes2.jpg used on input line 267.
-(pdftex.def)             Requested size: 364.19536pt x 273.13278pt.
-
+]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [34
 
- <C:/Users/Jared/mis-presentation/img/horseshoes2.jpg>]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
+]
 [35
 
 ]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
-[36
-
-]
-[37
-
-]
-<./img/datain.jpg, id=1254, 2569.6pt x 1927.2pt>
+<./img/datain.jpg, id=1239, 2569.6pt x 1927.2pt>
 File: ./img/datain.jpg Graphic file (type jpg)
 
 <use ./img/datain.jpg>
 Package pdftex.def Info: ./img/datain.jpg used on input line 289.
 (pdftex.def)             Requested size: 364.19536pt x 273.12912pt.
 
-[38
+[36
 
  <C:/Users/Jared/mis-presentation/img/datain.jpg>]
-<./img/silvergoldbars.jpg, id=1279, 578.16pt x 387.849pt>
+<./img/silvergoldbars.jpg, id=1264, 578.16pt x 387.849pt>
 File: ./img/silvergoldbars.jpg Graphic file (type jpg)
 
 <use ./img/silvergoldbars.jpg>
 Package pdftex.def Info: ./img/silvergoldbars.jpg used on input line 296.
 (pdftex.def)             Requested size: 364.19536pt x 244.31064pt.
 
-[39
+[37
 
  <C:/Users/Jared/mis-presentation/img/silvergoldbars.jpg>]
-<./img/policyproduct.jpg, id=1303, 3083.52pt x 2040.62375pt>
+<./img/policyproduct.jpg, id=1290, 3083.52pt x 2040.62375pt>
 File: ./img/policyproduct.jpg Graphic file (type jpg)
 
 <use ./img/policyproduct.jpg>
 Package pdftex.def Info: ./img/policyproduct.jpg used on input line 303.
 (pdftex.def)             Requested size: 364.19536pt x 241.00325pt.
 
-[40
+[38
 
  <C:/Users/Jared/mis-presentation/img/policyproduct.jpg>]
+[39
+
+]
 (C:\Users\Jared\mis-presentation\presentationdraft.toc)
+[40
+
+]
 [41
 
 ]
-[42
-
-]
-<./img/frustration.jpg, id=1406, 1015.795pt x 851.18pt>
+<./img/frustration.jpg, id=1422, 1015.795pt x 851.18pt>
 File: ./img/frustration.jpg Graphic file (type jpg)
 
 <use ./img/frustration.jpg>
-Package pdftex.def Info: ./img/frustration.jpg used on input line 318.
+Package pdftex.def Info: ./img/frustration.jpg used on input line 323.
 (pdftex.def)             Requested size: 364.19536pt x 305.17772pt.
 
-[43
+[42
 
  <C:/Users/Jared/mis-presentation/img/frustration.jpg>]
+[43
+
+]
 [44
 
 ]
-[45
-
-]
-<./img/paperwork.jpg, id=1488, 240.9pt x 227.4096pt>
+<./img/paperwork.jpg, id=1504, 240.9pt x 227.4096pt>
 File: ./img/paperwork.jpg Graphic file (type jpg)
 
 <use ./img/paperwork.jpg>
-Package pdftex.def Info: ./img/paperwork.jpg used on input line 334.
+Package pdftex.def Info: ./img/paperwork.jpg used on input line 339.
 (pdftex.def)             Requested size: 364.19536pt x 343.83403pt.
 
-[46
+[45
 
  <C:/Users/Jared/mis-presentation/img/paperwork.jpg>]
-[47
+[46
 
 ]
-<./img/jail.jpg, id=1541, 2264.46pt x 1501.61pt>
+<./img/jail.jpg, id=1557, 2264.46pt x 1501.61pt>
 File: ./img/jail.jpg Graphic file (type jpg)
 
 <use ./img/jail.jpg>
-Package pdftex.def Info: ./img/jail.jpg used on input line 347.
+Package pdftex.def Info: ./img/jail.jpg used on input line 352.
 (pdftex.def)             Requested size: 364.19536pt x 241.49979pt.
 
-[48
+[47
 
  <C:/Users/Jared/mis-presentation/img/jail.jpg>]
+[48
+
+]
 [49
 
 ]
-<./img/puzzleorg.jpg, id=1595, 1606.0pt x 1204.5pt>
-File: ./img/puzzleorg.jpg Graphic file (type jpg)
-
-<use ./img/puzzleorg.jpg>
-Package pdftex.def Info: ./img/puzzleorg.jpg used on input line 361.
-(pdftex.def)             Requested size: 364.19536pt x 273.13278pt.
-
 [50
 
- <C:/Users/Jared/mis-presentation/img/puzzleorg.jpg>]
+]
 [51
 
 ]
 [52
 
 ]
+<./img/puzzleorg.jpg, id=1723, 1606.0pt x 1204.5pt>
+File: ./img/puzzleorg.jpg Graphic file (type jpg)
+
+<use ./img/puzzleorg.jpg>
+Package pdftex.def Info: ./img/puzzleorg.jpg used on input line 375.
+(pdftex.def)             Requested size: 364.19536pt x 273.13278pt.
+
 [53
 
-]
+ <C:/Users/Jared/mis-presentation/img/puzzleorg.jpg>]
 [54
 
 ]
-[55
-
-]
-[56
-
-]
-<./img/irrelevant.jpg, id=1789, 1267.73625pt x 1168.365pt>
+<./img/irrelevant.jpg, id=1776, 1267.73625pt x 1168.365pt>
 File: ./img/irrelevant.jpg Graphic file (type jpg)
 
 <use ./img/irrelevant.jpg>
-Package pdftex.def Info: ./img/irrelevant.jpg used on input line 390.
+Package pdftex.def Info: ./img/irrelevant.jpg used on input line 389.
 (pdftex.def)             Requested size: 364.19536pt x 335.64383pt.
 
-[57
+[55
 
  <C:/Users/Jared/mis-presentation/img/irrelevant.jpg>]
-[58
+[56
 
 ]
 (C:\Users\Jared\mis-presentation\presentationdraft.toc)
-[59
+[57
 
 ]
-<./img/openfield.jpg, id=1890, 1405.25pt x 1053.9375pt>
+<./img/openfield.jpg, id=1880, 1405.25pt x 1053.9375pt>
 File: ./img/openfield.jpg Graphic file (type jpg)
 
 <use ./img/openfield.jpg>
-Package pdftex.def Info: ./img/openfield.jpg used on input line 416.
+Package pdftex.def Info: ./img/openfield.jpg used on input line 419.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
 
-[60
+[58
 
  <C:/Users/Jared/mis-presentation/img/openfield.jpg>]
-<./img/rscreenshot.png, id=1915, 1938.24126pt x 1416.29124pt>
+<./img/rscreenshot.png, id=1905, 1938.24126pt x 1416.29124pt>
 File: ./img/rscreenshot.png Graphic file (type png)
 
 <use ./img/rscreenshot.png>
-Package pdftex.def Info: ./img/rscreenshot.png used on input line 423.
+Package pdftex.def Info: ./img/rscreenshot.png used on input line 426.
 (pdftex.def)             Requested size: 364.19536pt x 266.11583pt.
 
-[61
+[59
 
  <C:/Users/Jared/mis-presentation/img/rscreenshot.png>]
-[62
+[60
 
 ]
-[63
+[61
 
 ]
-<./img/maze.jpg, id=1999, 505.89pt x 379.6584pt>
+<./img/maze.jpg, id=1989, 505.89pt x 379.6584pt>
 File: ./img/maze.jpg Graphic file (type jpg)
 
 <use ./img/maze.jpg>
-Package pdftex.def Info: ./img/maze.jpg used on input line 465.
+Package pdftex.def Info: ./img/maze.jpg used on input line 468.
 (pdftex.def)             Requested size: 364.19536pt x 273.32487pt.
 
-[64
+[62
 
  <C:/Users/Jared/mis-presentation/img/maze.jpg>]
-<./img/buggy.jpg, id=2024, 1104.125pt x 749.80125pt>
+<./img/buggy.jpg, id=2014, 1104.125pt x 749.80125pt>
 File: ./img/buggy.jpg Graphic file (type jpg)
 
 <use ./img/buggy.jpg>
-Package pdftex.def Info: ./img/buggy.jpg used on input line 472.
+Package pdftex.def Info: ./img/buggy.jpg used on input line 475.
 (pdftex.def)             Requested size: 364.19536pt x 247.32077pt.
 
-[65
+[63
 
  <C:/Users/Jared/mis-presentation/img/buggy.jpg>]
-<./img/hummer.jpg, id=2049, 1606.0pt x 1204.5pt>
+<./img/hummer.jpg, id=2039, 1606.0pt x 1204.5pt>
 File: ./img/hummer.jpg Graphic file (type jpg)
 
 <use ./img/hummer.jpg>
-Package pdftex.def Info: ./img/hummer.jpg used on input line 479.
+Package pdftex.def Info: ./img/hummer.jpg used on input line 482.
 (pdftex.def)             Requested size: 364.19536pt x 273.13278pt.
 
-[66
+[64
 
  <C:/Users/Jared/mis-presentation/img/hummer.jpg>]
+[65
+
+]
+[66
+
+]
 [67
 
 ]
 [68
 
 ]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [69
 
 ]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [70
 
 ]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [71
 
 ]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [72
 
 ]
-[73
-
-]
-[74
-
-]
-<./img/rstudio-windows.png, id=2344, 952.55875pt x 792.9625pt>
+<./img/rstudio-windows.png, id=2339, 952.55875pt x 792.9625pt>
 File: ./img/rstudio-windows.png Graphic file (type png)
 
 <use ./img/rstudio-windows.png>
-Package pdftex.def Info: ./img/rstudio-windows.png used on input line 549.
+Package pdftex.def Info: ./img/rstudio-windows.png used on input line 558.
 (pdftex.def)             Requested size: 136.91862pt x 113.9784pt.
 
-[75
+[73
 
  <C:/Users/Jared/mis-presentation/img/rstudio-windows.png>]
+[74
+
+]
+[75
+
+]
 [76
 
 ]
@@ -1403,80 +1402,65 @@ Package pdftex.def Info: ./img/rstudio-windows.png used on input line 549.
 [80
 
 ]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [81
 
 ]
 [82
 
 ]
-[83
-
-]
-[84
-
-]
-[85
-
-]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
-[86
-
-]
-[87
-
-]
-<./img/hex.pdf, id=2732, 505.89pt x 505.89pt>
+<./img/hex.pdf, id=2645, 505.89pt x 505.89pt>
 File: ./img/hex.pdf Graphic file (type pdf)
 
 <use ./img/hex.pdf>
-Package pdftex.def Info: ./img/hex.pdf used on input line 624.
+Package pdftex.def Info: ./img/hex.pdf used on input line 622.
 (pdftex.def)             Requested size: 102.68962pt x 102.68918pt.
 
-<./img/crosstab.pdf, id=2733, 505.89pt x 505.89pt>
+<./img/crosstab.pdf, id=2646, 505.89pt x 505.89pt>
 File: ./img/crosstab.pdf Graphic file (type pdf)
 
 <use ./img/crosstab.pdf>
-Package pdftex.def Info: ./img/crosstab.pdf used on input line 624.
+Package pdftex.def Info: ./img/crosstab.pdf used on input line 622.
 (pdftex.def)             Requested size: 102.68962pt x 102.68918pt.
 
-<./img/condensity.pdf, id=2734, 505.89pt x 505.89pt>
+<./img/condensity.pdf, id=2647, 505.89pt x 505.89pt>
 File: ./img/condensity.pdf Graphic file (type pdf)
 
 <use ./img/condensity.pdf>
-Package pdftex.def Info: ./img/condensity.pdf used on input line 624.
+Package pdftex.def Info: ./img/condensity.pdf used on input line 622.
 (pdftex.def)             Requested size: 102.68962pt x 102.68918pt.
 
-<./img/heatmap.pdf, id=2735, 505.89pt x 505.89pt>
+<./img/heatmap.pdf, id=2648, 505.89pt x 505.89pt>
 File: ./img/heatmap.pdf Graphic file (type pdf)
 
 <use ./img/heatmap.pdf>
-Package pdftex.def Info: ./img/heatmap.pdf used on input line 624.
+Package pdftex.def Info: ./img/heatmap.pdf used on input line 622.
 (pdftex.def)             Requested size: 102.68962pt x 102.68918pt.
 
-[88
+[83
 
  <C:/Users/Jared/mis-presentation/img/hex.pdf> <C:/Users/Jared/mis-presentation
 /img/crosstab.pdf> <C:/Users/Jared/mis-presentation/img/condensity.pdf> <C:/Use
 rs/Jared/mis-presentation/img/heatmap.pdf>]
 (C:\Users\Jared\mis-presentation\presentationdraft.toc)
-[89
+[84
 
 ]
-<./img/classtree.pdf, id=2844, 433.62pt x 361.35pt>
+<./img/classtree.pdf, id=2759, 433.62pt x 361.35pt>
 File: ./img/classtree.pdf Graphic file (type pdf)
 
 <use ./img/classtree.pdf>
-Package pdftex.def Info: ./img/classtree.pdf used on input line 635.
+Package pdftex.def Info: ./img/classtree.pdf used on input line 633.
 (pdftex.def)             Requested size: 273.83728pt x 228.20859pt.
 
-Overfull \vbox (12.57239pt too high) detected at line 635
+Overfull \vbox (12.57239pt too high) detected at line 633
  []
 
 
-[90
+[85
 
  <C:/Users/Jared/mis-presentation/img/classtree.pdf>]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 642.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 640.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
@@ -1484,9 +1468,9 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 
 LaTeX Font Warning: Font shape `T1/aett/bc/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 642.
+(Font)              using `T1/aett/m/n' instead on input line 640.
 
-LaTeX Font Info:    Try loading font information for TS1+aett on input line 644
+LaTeX Font Info:    Try loading font information for TS1+aett on input line 642
 .
 
 (C:/PROGRA~1/R/R-214~1.1/share/texmf/tex/latex\ts1aett.fd
@@ -1495,175 +1479,208 @@ File: ts1aett.fd
 
 LaTeX Font Warning: Font shape `TS1/aett/bc/n' undefined
 (Font)              using `TS1/aett/m/n' instead
-(Font)              for symbol `textquotesingle' on input line 644.
+(Font)              for symbol `textquotesingle' on input line 642.
 
-LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 644
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 642
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmtt.fd"
 File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `TS1/aett/m/n' in size <9> not available
-(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 644.
+(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 642.
 LaTeX Font Info:    Font shape `TS1/aett/bc/n' in size <9> not available
-(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 644.
+(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 642.
 
-[91
+[86
 
 ]
-<./img/crosstab2.pdf, id=2911, 433.62pt x 361.35pt>
+<./img/crosstab2.pdf, id=2826, 433.62pt x 361.35pt>
 File: ./img/crosstab2.pdf Graphic file (type pdf)
 
 <use ./img/crosstab2.pdf>
-Package pdftex.def Info: ./img/crosstab2.pdf used on input line 656.
+Package pdftex.def Info: ./img/crosstab2.pdf used on input line 654.
 (pdftex.def)             Requested size: 290.9531pt x 242.47266pt.
 
-Overfull \vbox (29.29132pt too high) detected at line 656
+Overfull \vbox (29.29132pt too high) detected at line 654
  []
 
 
-[92
+[87
 
  <C:/Users/Jared/mis-presentation/img/crosstab2.pdf>]
-[93
+[88
 
 ]
-<./img/FRL2010.png, id=2974, 566.115pt x 556.32843pt>
+<./img/FRL2010.png, id=2889, 566.115pt x 556.32843pt>
 File: ./img/FRL2010.png Graphic file (type png)
 
 <use ./img/FRL2010.png>
-Package pdftex.def Info: ./img/FRL2010.png used on input line 680.
+Package pdftex.def Info: ./img/FRL2010.png used on input line 678.
 (pdftex.def)             Requested size: 290.9531pt x 285.93085pt.
 
-Overfull \vbox (6.03937pt too high) detected at line 680
+Overfull \vbox (6.03937pt too high) detected at line 678
  []
 
 
-[94
+[89
 
  <C:/Users/Jared/mis-presentation/img/FRL2010.png>]
 File: ./img/heatmap.pdf Graphic file (type pdf)
 
 <use ./img/heatmap.pdf>
-Package pdftex.def Info: ./img/heatmap.pdf used on input line 689.
+Package pdftex.def Info: ./img/heatmap.pdf used on input line 687.
 (pdftex.def)             Requested size: 290.9531pt x 290.95395pt.
 
-Overfull \vbox (9.80669pt too high) detected at line 689
+Overfull \vbox (9.80669pt too high) detected at line 687
  []
 
 
-[95
+[90
 
 ]
 File: ./img/condensity.pdf Graphic file (type pdf)
 
 <use ./img/condensity.pdf>
-Package pdftex.def Info: ./img/condensity.pdf used on input line 698.
+Package pdftex.def Info: ./img/condensity.pdf used on input line 696.
 (pdftex.def)             Requested size: 290.9531pt x 290.95395pt.
 
-Overfull \vbox (9.80669pt too high) detected at line 698
+Overfull \vbox (9.80669pt too high) detected at line 696
  []
 
 
-[96
+[91
 
 ]
 File: ./img/hex.pdf Graphic file (type pdf)
 
 <use ./img/hex.pdf>
-Package pdftex.def Info: ./img/hex.pdf used on input line 708.
+Package pdftex.def Info: ./img/hex.pdf used on input line 706.
 (pdftex.def)             Requested size: 290.9531pt x 290.95395pt.
 
-Overfull \vbox (2.57925pt too high) detected at line 708
+Overfull \vbox (2.57925pt too high) detected at line 706
  []
 
 
-[97
+[92
 
 ]
-<./img/occupationscatter.png, id=3088, 1165.35374pt x 900.36375pt>
+<./img/occupationscatter.png, id=3003, 1165.35374pt x 900.36375pt>
 File: ./img/occupationscatter.png Graphic file (type png)
 
 <use ./img/occupationscatter.png>
-Package pdftex.def Info: ./img/occupationscatter.png used on input line 718.
+Package pdftex.def Info: ./img/occupationscatter.png used on input line 716.
 (pdftex.def)             Requested size: 290.9531pt x 224.78813pt.
 
-[98
+[93
 
  <C:/Users/Jared/mis-presentation/img/occupationscatter.png>]
-<./img/g3belowproficientreadingscores.pdf, id=3117, 794.97pt x 614.295pt>
+<./img/g3belowproficientreadingscores.pdf, id=3032, 794.97pt x 614.295pt>
 File: ./img/g3belowproficientreadingscores.pdf Graphic file (type pdf)
 
 <use ./img/g3belowproficientreadingscores.pdf>
 Package pdftex.def Info: ./img/g3belowproficientreadingscores.pdf used on input
- line 729.
+ line 727.
 (pdftex.def)             Requested size: 325.17949pt x 251.28142pt.
 
-[99
+[94
 
  <C:/Users/Jared/mis-presentation/img/g3belowproficientreadingscores.pdf>]
-<./img/proficiencypolygon.pdf, id=3156, 433.62pt x 361.35pt>
+<./img/proficiencypolygon.pdf, id=3071, 433.62pt x 361.35pt>
 File: ./img/proficiencypolygon.pdf Graphic file (type pdf)
 
 <use ./img/proficiencypolygon.pdf>
-Package pdftex.def Info: ./img/proficiencypolygon.pdf used on input line 740.
+Package pdftex.def Info: ./img/proficiencypolygon.pdf used on input line 738.
 (pdftex.def)             Requested size: 325.17949pt x 270.99529pt.
 
-Overfull \vbox (4.4139pt too high) detected at line 740
+Overfull \vbox (4.4139pt too high) detected at line 738
  []
 
 
-[100
+[95
 
  <C:/Users/Jared/mis-presentation/img/proficiencypolygon.pdf>]
-<./img/facetstudents.pdf, id=3191, 433.62pt x 361.35pt>
+<./img/facetstudents.pdf, id=3106, 433.62pt x 361.35pt>
 File: ./img/facetstudents.pdf Graphic file (type pdf)
 
 <use ./img/facetstudents.pdf>
-Package pdftex.def Info: ./img/facetstudents.pdf used on input line 752.
+Package pdftex.def Info: ./img/facetstudents.pdf used on input line 750.
 (pdftex.def)             Requested size: 325.17949pt x 270.99529pt.
 
-Overfull \vbox (7.4851pt too high) detected at line 752
+Overfull \vbox (7.4851pt too high) detected at line 750
  []
 
 
-[101
+[96
 
  <C:/Users/Jared/mis-presentation/img/facetstudents.pdf>]
-<./img/facetstudentspoly.pdf, id=3226, 433.62pt x 361.35pt>
+<./img/facetstudentspoly.pdf, id=3141, 433.62pt x 361.35pt>
 File: ./img/facetstudentspoly.pdf Graphic file (type pdf)
 
 <use ./img/facetstudentspoly.pdf>
-Package pdftex.def Info: ./img/facetstudentspoly.pdf used on input line 769.
+Package pdftex.def Info: ./img/facetstudentspoly.pdf used on input line 767.
 (pdftex.def)             Requested size: 308.06367pt x 256.73122pt.
 
-[102
+[97
 
  <C:/Users/Jared/mis-presentation/img/facetstudentspoly.pdf>]
-<./img/coefplot1.pdf, id=3262, 505.89pt x 361.35pt>
+<./img/coefplot1.pdf, id=3178, 505.89pt x 361.35pt>
 File: ./img/coefplot1.pdf Graphic file (type pdf)
 
 <use ./img/coefplot1.pdf>
-Package pdftex.def Info: ./img/coefplot1.pdf used on input line 786.
+Package pdftex.def Info: ./img/coefplot1.pdf used on input line 784.
 (pdftex.def)             Requested size: 308.06367pt x 220.04825pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-[103
+[98
 
 ]
-[104 <C:/Users/Jared/mis-presentation/img/coefplot1.pdf>]
-<./img/effectsize.pdf, id=3325, 505.89pt x 361.35pt>
+[99 <C:/Users/Jared/mis-presentation/img/coefplot1.pdf>]
+<./img/effectsize.pdf, id=3240, 505.89pt x 361.35pt>
 File: ./img/effectsize.pdf Graphic file (type pdf)
 
 <use ./img/effectsize.pdf>
-Package pdftex.def Info: ./img/effectsize.pdf used on input line 799.
+Package pdftex.def Info: ./img/effectsize.pdf used on input line 797.
 (pdftex.def)             Requested size: 308.06367pt x 220.04825pt.
+
+[100
+
+ <C:/Users/Jared/mis-presentation/img/effectsize.pdf>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
+[101
+
+]
+[102
+
+]
+[103
+
+]
+[104
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 920.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 920.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 920.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 920.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 920.
 
 [105
 
- <C:/Users/Jared/mis-presentation/img/effectsize.pdf>]
+]
 (C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [106
 
@@ -1671,32 +1688,17 @@ Package pdftex.def Info: ./img/effectsize.pdf used on input line 799.
 [107
 
 ]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [108
 
 ]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [109
 
 ]
 [110
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 961.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 961.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 961.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 961.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 961.
-
 [111
 
 ]
@@ -1704,182 +1706,173 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
 [112
 
 ]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
+(C:\Users\Jared\mis-presentation\presentationdraft.vrb)
 [113
 
 ]
 [114
 
+
 ]
-Overfull \vbox (63.39127pt too high) detected at line 1008
- []
-
-
 [115
 
+
 ]
-Overfull \hbox (17.73956pt too wide) in paragraph at lines 1032--1032
- [] 
- []
-
-
 [116
 
-]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
-[117
 
 ]
-(C:\Users\Jared\mis-presentation\presentationdraft.vrb)
-[118
-
-]
-[119
-
-
-]
-[120
-
-
-]
-[121
-
-
-]
-<./img/residplot.pdf, id=3896, 433.62pt x 361.35pt>
+<./img/residplot.pdf, id=3842, 433.62pt x 361.35pt>
 File: ./img/residplot.pdf Graphic file (type pdf)
 
 <use ./img/residplot.pdf>
-Package pdftex.def Info: ./img/residplot.pdf used on input line 1120.
+Package pdftex.def Info: ./img/residplot.pdf used on input line 1071.
 (pdftex.def)             Requested size: 273.83728pt x 228.20859pt.
 
-Overfull \vbox (12.57239pt too high) detected at line 1120
+Overfull \vbox (12.57239pt too high) detected at line 1071
  []
 
 
-[122
+[117
 
  <C:/Users/Jared/mis-presentation/img/residplot.pdf>]
-<fittedplot.png, id=3934, 1027.84pt x 770.88pt>
+<fittedplot.png, id=3880, 1027.84pt x 770.88pt>
 File: fittedplot.png Graphic file (type png)
 
 <use fittedplot.png>
-Package pdftex.def Info: fittedplot.png used on input line 1128.
+Package pdftex.def Info: fittedplot.png used on input line 1079.
 (pdftex.def)             Requested size: 273.83728pt x 205.37616pt.
 
-[123
+[118
 
  <C:/Users/Jared/mis-presentation/fittedplot.png>]
-<mlfitted.png, id=3964, 1027.84pt x 770.88pt>
+<mlfitted.png, id=3910, 1027.84pt x 770.88pt>
 File: mlfitted.png Graphic file (type png)
 
 <use mlfitted.png>
-Package pdftex.def Info: mlfitted.png used on input line 1138.
+Package pdftex.def Info: mlfitted.png used on input line 1089.
 (pdftex.def)             Requested size: 273.83487pt x 177.53392pt.
 
-[124
+[119
 
  <C:/Users/Jared/mis-presentation/mlfitted.png>]
-<OLSandMLM.png, id=3993, 1204.5pt x 602.25pt>
+<OLSandMLM.png, id=3939, 1204.5pt x 602.25pt>
 File: OLSandMLM.png Graphic file (type png)
 
 <use OLSandMLM.png>
-Package pdftex.def Info: OLSandMLM.png used on input line 1148.
+Package pdftex.def Info: OLSandMLM.png used on input line 1099.
 (pdftex.def)             Requested size: 273.83119pt x 163.88702pt.
 
-[125
+[120
 
  <C:/Users/Jared/mis-presentation/OLSandMLM.png>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
+[121
+
+]
+[122
+
+]
+<./img/hackathon.jpg, id=4048, 2585.66pt x 1722.435pt>
+File: ./img/hackathon.jpg Graphic file (type jpg)
+
+<use ./img/hackathon.jpg>
+Package pdftex.def Info: ./img/hackathon.jpg used on input line 1114.
+(pdftex.def)             Requested size: 364.19536pt x 242.61105pt.
+
+[123
+
+ <C:/Users/Jared/mis-presentation/img/hackathon.jpg>]
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
+[124
+
+]
+[125
+
+]
 (C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [126
 
 ]
+<./img/GitHublogo.png, id=4203, 465.74pt x 205.76875pt>
+File: ./img/GitHublogo.png Graphic file (type png)
+
+<use ./img/GitHublogo.png>
+Package pdftex.def Info: ./img/GitHublogo.png used on input line 1140.
+(pdftex.def)             Requested size: 154.03183pt x 68.05145pt.
+
 [127
 
-]
-<./img/hackathon.jpg, id=4099, 2585.66pt x 1722.435pt>
-File: ./img/hackathon.jpg Graphic file (type jpg)
-
-<use ./img/hackathon.jpg>
-Package pdftex.def Info: ./img/hackathon.jpg used on input line 1163.
-(pdftex.def)             Requested size: 364.19536pt x 242.61105pt.
-
+ <C:/Users/Jared/mis-presentation/img/GitHublogo.png>]
 [128
 
- <C:/Users/Jared/mis-presentation/img/hackathon.jpg>]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
+]
 [129
 
 ]
 [130
 
 ]
-(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [131
 
 ]
-<./img/GitHublogo.png, id=4250, 465.74pt x 205.76875pt>
-File: ./img/GitHublogo.png Graphic file (type png)
-
-<use ./img/GitHublogo.png>
-Package pdftex.def Info: ./img/GitHublogo.png used on input line 1189.
-(pdftex.def)             Requested size: 154.03183pt x 68.05145pt.
-
+(C:\Users\Jared\mis-presentation\presentationdraft.toc)
 [132
 
- <C:/Users/Jared/mis-presentation/img/GitHublogo.png>]
+]
+<./img/questiondice.jpg, id=4396, 1695.33376pt x 1141.26375pt>
+File: ./img/questiondice.jpg Graphic file (type jpg)
+
+<use ./img/questiondice.jpg>
+Package pdftex.def Info: ./img/questiondice.jpg used on input line 1214.
+(pdftex.def)             Requested size: 273.81995pt x 218.51413pt.
+
 [133
 
-]
+ <C:/Users/Jared/mis-presentation/img/questiondice.jpg>]
 [134
 
 ]
-[135
-
-]
-[136
-
-]
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 1258.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 1235.
 
 
-[137
+[135
 
 ]
 
 LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
-(Font)              using `T1/aess/m/n' instead on input line 1285.
+(Font)              using `T1/aess/m/n' instead on input line 1263.
 
 
-[138
+[136
 
 ]
-[139
+[137
 
 ]
 \tf@nav=\write7
 \tf@toc=\write8
 \tf@snm=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1300.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1300.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1278.
 
 (C:\Users\Jared\mis-presentation\presentationdraft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1278.
 
 Package rerunfilecheck Info: File `presentationdraft.out' has not changed.
-(rerunfilecheck)             Checksum: 9B2BDF5C99AA8638AD28FA4BD813F514;1230.
+(rerunfilecheck)             Checksum: E51365FA7A6FE0B2D03A3DC1F55B98F7;1364.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17956 strings out of 494045
- 329848 string characters out of 3145969
- 405261 words of memory out of 3000000
- 20404 multiletter control sequences out of 15000+200000
- 45922 words of font info for 90 fonts, out of 3000000 for 9000
+ 17980 strings out of 494045
+ 330420 string characters out of 3145969
+ 404772 words of memory out of 3000000
+ 20420 multiletter control sequences out of 15000+200000
+ 48546 words of font info for 95 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  49i,17n,67p,461b,698s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jared\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
@@ -1889,9 +1882,9 @@ s10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss1
 2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on presentationdraft.pdf (139 pages, 16776670 bytes).
+Output written on presentationdraft.pdf (137 pages, 17483971 bytes).
 PDF statistics:
- 4578 PDF objects out of 5155 (max. 8388607)
- 284 named destinations out of 1000 (max. 500000)
- 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4628 PDF objects out of 5155 (max. 8388607)
+ 281 named destinations out of 1000 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
