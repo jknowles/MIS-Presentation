@@ -10,9 +10,9 @@
 \usepackage{epsfig,graphicx}
 \usepackage{verbatim, rotating, paralist,hyperref}
 \usepackage{float}
-\graphicspath{{./img/}} %additional graphics directory
 
-\title{Policy Relevant Visualization and Analysis of LDS Data With Open Source Tools}
+
+\title [Policy Relevant Research with LDS Data]{Policy Relevant Visualization and Analysis of LDS Data With Open Source Tools}
 
 \author{Jared Knowles}
 % - Use the \inst{?} command only if the authors have different
@@ -36,10 +36,11 @@
 
 \usepackage{Sweave}
 \usepackage{dcolumn, multirow}
-\usepackage{epsfig,graphicx}
+\usepackage{epsfig,graphicx,multicol}
 \usepackage{verbatim, rotating, paralist,hyperref}
-\usepackage{float}
-\graphicspath{{./img/}} %additional graphics directory
+\usepackage{float,color}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\graphicspath{{../img/}} %additional graphics directory
 
 
 
@@ -53,26 +54,32 @@
 {
    \begin{frame}
        \frametitle{Outline}
+        \begin{multicols}{2} 
        \tableofcontents[currentsection]
+        \end{multicols} 
    \end{frame}
 }
+
+
 
 \AtBeginSubsection[]
 {
    \begin{frame}
        \frametitle{Outline}
+       \begin{multicols}{2} 
        \tableofcontents[currentsection,currentsubsection]
+       \end{multicols} 
    \end{frame}
 }
 
 
 \AtBeginDocument{ 
 \DefineVerbatimEnvironment{Sinput}{Verbatim} {xleftmargin=2em,fontsize= 
-\footnotesize} 
+\footnotesize,fontseries=bc,frame=single} 
 \DefineVerbatimEnvironment{Soutput}{Verbatim}{xleftmargin=2em,fontsize= 
-\footnotesize} 
+\footnotesize,frame=leftline} 
 \DefineVerbatimEnvironment{Scode}{Verbatim}{xleftmargin=2em,fontsize= 
-\footnotesize} 
+\footnotesize,fontseries=bc} 
 }
 
 \begin{document}
@@ -85,7 +92,9 @@
 
 
 \begin{frame}{Outline}
-  \tableofcontents
+\begin{multicols}{2}
+   \tableofcontents
+\end{multicols}
 \end{frame}
 
 
@@ -104,11 +113,16 @@
   \begin{itemize}
   \item States and LEAs have an abundance of data, but how do 
   we extract meaning from it?
+  \pause
   \item Can we do data analysis fast enough to inform decisions and improve 
   outcomes?
+  \pause
   \item Can we produce analyses that are approachable to policy makers and the public so that they galvanize change?
+  \pause
   \item Can we do these things in a time of reduced staffing, decreased 
   budgets, and a shortage of time?
+  \pause
+  \item Can we do analyses under constraints that remain rigorous and valid and provide accurate information?
   \end{itemize}
 \end{frame}
 
@@ -116,6 +130,7 @@
 \frametitle{Example}
 \begin{center}
 \textbf{The state chief school officer asks: \\ 
+\vspace{.15in}
 ``Do our state bilingual-bicultural programs provide any benefit to our students? Should we focus on ESL more or keep our BLBC programs?''}
 \end{center}
 \end{frame}
@@ -141,7 +156,6 @@
   \item No studies in our state. State legislators not impressed.
   \pause
   \item Study will take months. 
-  \pause
   \end{itemize}
   \end{columns}
 \end{frame}
@@ -168,8 +182,87 @@
 \begin{frame}
 \frametitle{How do we do more?}
 \begin{center}
-\Large \textbf{What tools exist to help us turn data into usable information that informs decisions?}
+\textbf{What tools exist to help us turn data into usable information that informs decisions?} \\
+\vspace{.2in}
+\large \textbf{Policy Research}
 \end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Summary}
+\begin{center}
+\Large \textbf{An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem.}
+\\
+\end{center}
+\large John Tukey
+\end{frame}
+
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{fast}}
+\begin{frame}[plain]
+\frametitle{Policy Relevant Research is FAST}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{laserfocus}}
+\begin{frame}[plain]
+\frametitle{Policy Relevant Research is FOCUSED}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{horseshoes2}}
+\begin{frame}[plain]
+\frametitle{Policy Relevant Research is APPROXIMATE}
+\end{frame}
+}
+
+
+\begin{frame}
+\frametitle{Policy Research}
+  \begin{columns}
+  \column[t]{.5\textwidth}
+  Policy research is...
+  \begin{itemize}
+  \item Fast
+  \item Narrowly focused
+  \item Approximate
+  \item Fast
+  \pause
+  \end{itemize}
+  \column[t]{.5\textwidth}
+  Traditional research is...
+  \begin{itemize}
+  \item Long term
+  \pause
+  \item Branches to new ideas and new paths
+  \pause
+  \item Focused on precision 
+  \pause
+  \item Peer-reviewed
+  \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Policy Research Is Not...}
+  \begin{itemize}
+  \item A visualization and summary statistics
+  \item Descriptive statistics organized with some text
+  \item Ignorant of policy limitations and context
+  \end{itemize}
+\begin{center}
+But it also is not:
+\end{center}
+  \begin{itemize}
+    \item Focused on purely causal relationships
+    \item Overly concerned with precision of estimates
+    \item Irrefutable 
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -182,48 +275,22 @@
   \pause
   \item An analysis of concentration in dropouts
   \pause
-  \item Data visualization to demonstrate problem scope for grants and press materials
+  \item An anaysis of feeder patterns for teacher supply from teacher prep programs
   \end{itemize}
 \end{frame}
-
-\begin{frame}
-\begin{center}
-\Huge \textbf{How?}
-\end{center}
-\end{frame}
-
-{
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{fast}}
-\begin{frame}[plain]
-\frametitle{Policy Relevant Analysis is FAST}
-\end{frame}
-}
-
-{
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{narrow}}
-\begin{frame}[plain]
-\frametitle{Policy Relevant Analysis is FOCUSED}
-\end{frame}
-}
-
-{
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{horseshoes2}}
-\begin{frame}[plain]
-\frametitle{Policy Relevant Analysis is APPROXIMATE}
-\end{frame}
-}
 
 
 \section{Extracting Meaning from Data}
 \label{sec:extrct-meaning}
 
-\subsection{Why Invest in Analyzing Data?}
+\subsection{Why is Data Analysis So Important?}
 \begin{frame}
 \frametitle{Gathering More Data}
 \begin{itemize}
   \item States and districts collect hundreds of attributes about millions of students
   \item Data is collected before children reach school age and after they have moved to a college or a career
-  \item Patterns can tell us how choices in policy will actually affect the population
+  \item Patterns may inform how choices in policy will affect the population
+  \item Lessons learned can help us build simulations to weigh policy outcomes before making decisions--decision support
 \end{itemize}
 \end{frame}
 
@@ -249,12 +316,24 @@
 }
 
 
+\begin{frame}
+\begin{center}
+\Huge \textbf{How?}
+\end{center}
+\end{frame}
 
-\subsection{Why Can't We Invest in Data Analysis?}
+\subsection{Barriers to Data Analysis}
 
 \begin{frame}
 \frametitle{Institutional Frustrations}
-We just need to get our jobs done. We need to do them efficiently, but also transparently and in a reproducible manner. This is currently costly in time, money, and management resources.
+We just need to get our jobs done. We need to do them:
+\begin{itemize}
+  \item efficiently
+  \item transparently 
+  \item and in a reproducible manner
+\end{itemize}
+
+This is currently \Large \textbf{costly} \normalsize in time, money, and management resources.
 \end{frame}
 
 {
@@ -265,7 +344,7 @@ We just need to get our jobs done. We need to do them efficiently, but also tran
 
 \begin{frame}
 \frametitle{Institutional Frustrations}
-We just need to get our jobs done. We need to do them efficiently, but also transparently and in a reproducible manner. This is currently costly in time, money, and management resources.
+A number of barriers make using data difficult and supporting decisions on short timelines hard:
   \begin{itemize}
   \item Acquiring proprietary tools from vendors takes agreements, legal documents, and lag time
   \pause
@@ -281,9 +360,13 @@ We just need to get our jobs done. We need to do them efficiently, but also tran
 
 \begin{frame}
 \frametitle{Institutional Frustrations}
+Analyses that get done are not part of cohesive strategy, but done ad hoc.
   \begin{itemize}
-  \item Analyses are often done in proprietary tool sets, poorly documented, and unable to be reproduced with updated data later
+  \item Done using proprietary tool sets
+  \item Poorly documented
+  \item Unable to be reproduced with updated data later
   \end {itemize}
+Knowledge is lost, not accumulated.
 \end{frame}
 
 {
@@ -292,9 +375,10 @@ We just need to get our jobs done. We need to do them efficiently, but also tran
 \end{frame}
 }
 
+
 \begin{frame}
 \frametitle{Analyses Don't Get Used}
-Often when we do an in house analysis it does not get used or only gets used once.
+Often when we do an in house analysis it does not get used to support decisions.
   \begin{itemize}
   \item In house analysis often relies on the expertise of one or two staff who are obligated elsewhere. 
   \pause
@@ -303,7 +387,6 @@ Often when we do an in house analysis it does not get used or only gets used onc
   \item The information we have is dependent on individual staff and the analysis projects they undertake and their tenure supporting these efforts.
   \pause
   \item Staff turnover threatens to change the information available to make decisions as knowledge leaves the agency, breaking continuity with previous reports
-  \pause
   \end{itemize}
 \end{frame}
 
@@ -314,6 +397,13 @@ Often when we do an in house analysis it does not get used or only gets used onc
 \end{frame}
 }
 
+\begin{frame}
+\frametitle{Or we do the wrong analysis}
+\begin{center}
+\Large \textbf{Sometimes analyses are done at the whim of an analyst or two and not tied to the needs of decision makers or stakeholders}
+\end{center}
+\end{frame}
+
 {
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{irrelevant}}
 \begin{frame}[plain]
@@ -322,20 +412,45 @@ Often when we do an in house analysis it does not get used or only gets used onc
 }
 
 \begin{frame}
-\frametitle{AYP as an Example}
-  \begin{itemize}
-  \item Think about how AYP is calculated within your agency for SEAs, or how school performance reports are distributed to schools for LEAs
-  \item Who does this task? Could someone else step in and replace them and produce the exact same results if necessary?
-  \item How many other employees could use the same tools and recreate this work?
-  \item Is this risk acceptable for this pivotal function?
-  \end{itemize}
+\frametitle{Example}
+\begin{center}
+\textbf{The state chief school officer asks: \\ 
+``Do our state bilingual-bicultural programs provide any benefit to our students? Should we focus on ESL more or keep our BLBC programs?''}
+\end{center}
+\vspace{.1in}
+Instead we answer:
+\begin{itemize}
+  \item Our ELL students are doing better than last year.
+  \item National research is inconclusive on these programs.
+  \item Our data shows participation is up in BLBC programs.
+  \item We found a researcher to help with this in six months.
+\end{itemize}
 \end{frame}
 
 
 \subsection{What is the solution?}
 
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{openfield}}
+\begin{frame}[plain]
+\frametitle{Open Source Tools}
+\vspace{.3in}
+\begin{center}
+\Huge \textbf{R}
+\end{center}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rscreenshot}}
+\begin{frame}[plain]
+\frametitle{R}
+\end{frame}
+}
+
+
 \begin{frame}
-\frametitle{R As the Solution}
+\frametitle{R As Part of the Solution}
   \begin{columns}
   \column[t]{.5\textwidth}
   Objections to Data Analysis
@@ -356,16 +471,51 @@ Often when we do an in house analysis it does not get used or only gets used onc
   \end{columns}
 \end{frame}
 
+
 \begin{frame}
-\frametitle{More Support for R}
-  \begin{itemize}
-  \item R is a common tool among data experts at major universities
-  \item No need to go through procurement, R can be installed in any environment on any machine and used with no licensing or agreements needed
-  \item R source code is very readable to increase transparency of processes
-  \item R code is easily borrowed from and shared with others
-  \item R is incredibly flexible and can be adapted to specific local needs
-  \item R is under incredibly active development, improving greatly, and supported wildly by both professional and academic developers
-  \end{itemize}
+\frametitle{Caveats}
+\begin{center}
+\Large But wait...? Isn't R?
+\end{center}
+\end{frame}
+
+% But wait, isn't R difficult to use?
+% Isn't open source software buggy?
+% 
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{maze}}
+\begin{frame}[plain]
+\frametitle{Confusing?}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{buggy}}
+\begin{frame}[plain]
+\frametitle{Full of Bugs?}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{hummer}}
+\begin{frame}[plain]
+\frametitle{Inefficient?}
+\end{frame}
+}
+
+
+\begin{frame}
+\frametitle{The Truth}
+\begin{itemize}
+   \item The short answer is no. 
+   \pause
+   \item R has a high startup cost, but we are working to bring that down. 
+   \pause
+   \item R has some quirks, but all software does.
+   \pause
+   \item And, R can be amazingly more efficient through collaboration and sharing of code and tools.
+\end{itemize}
 \end{frame}
 
 
@@ -375,14 +525,35 @@ Often when we do an in house analysis it does not get used or only gets used onc
 \subsection{What is R?}
 \label{sec:what-r}
 
+
 \begin{frame}
   \begin{itemize}
-  \item R is an Open Source (and freely available) environment for statistical computinga nd graphics
+  \item R is an Open Source (and freely available) environment for statistical computing and graphics
   \item Available for Windows, Mac OS X, and Linux
-  \item R is being actively developed with two major releases per year and dozens of releases of add on packages
+  \item R is being actively developed with two major releases per year
   \item R can be extended with 'packages' that contain data, code, and documentation to add new functionality
+    \begin{itemize}
+    \item `SGP package' to calculate Student Growth Percentiles
+    \item `googleVis' package to build Google Visualizations easily out of data
+    \item `ggplot2' package to build attractive custom data visualizations
+    \end{itemize}
   \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{More Support for R}
+  \begin{itemize}
+  \item R is a common tool among data experts at major universities
+  \item No need to go through procurement, R can be installed in any environment on any machine and used with no licensing or agreements needed
+  \item R source code is very readable to increase transparency of analyses
+  \item R code is easily borrowed from and shared with others
+  \item R is incredibly flexible and can be adapted to specific local needs
+  \item R is under active development, improving greatly, and supported strongly by both professional and academic developers
+  \item R is top of the line best in class statistics software maintained by professional statisticians and supported by an active user community
+  \end{itemize}
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Using R}
@@ -431,7 +602,34 @@ Often when we do an in house analysis it does not get used or only gets used onc
   \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{R in the SEA}
+\begin{itemize}
+  \item By standardizing common data tasks staff are freed up to do other tasks
+  \pause
+  \item Wisconsin is using R to calculate AYP directly from the LDS
+  \pause
+  \item One script, one run, all reports and error checks run--saving weeks of work
+  \pause
+  \item Easy to understand how calculation is done protecting against discontinuity if staff turnsover
+  \pause
+  \item Other reports and data analyses are being standardized--quality checks on LDS data, etc.
+  \pause
+  \item More time to do policy research, more transparent data analyses that can be reproduced, accumulation of a knowledge base 
+\end{itemize}
+\end{frame}
+  
 
+
+\subsection{What can R do?}
+
+\begin{frame}
+\frametitle{Visualization}
+\vspace{.2in}
+
+\large One of the major strengths of R is its ability to create informative and compelling visualizations of data.
+
+\end{frame}
 
 \begin{frame}
 \frametitle{Examples of R Figures}
@@ -456,12 +654,19 @@ Often when we do an in house analysis it does not get used or only gets used onc
 \end{center}
 \end{frame}
 
-{
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{classtree}}
-\begin{frame}[plain]
-\frametitle{Inference Trees}
+\begin{frame}[containsverbatim]
+\frametitle{Easy Code for Plot}
+Code to make this plot:
+\vspace{.1in}
+\begin{Schunk}
+\begin{Sinput}
+> z1<-ctree(readSS~black+hisp+asian+indian+white+ell+disab+econ
++           +attday,data=subset(student_long,year=='2000',grade=5),
++           controls=bonf)
+> plot(z1,type='simple',main="Splitting Categorical Data")
+\end{Sinput}
+\end{Schunk}
 \end{frame}
-}
 
 
 \begin{frame}
@@ -469,6 +674,21 @@ Often when we do an in house analysis it does not get used or only gets used onc
 \vspace{.1in}
 \includegraphics[width=.85\textwidth]{crosstab2}
 \end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{R Code}
+Code for this plot that uses `mosaictabs' function from the LDS\_TOOLS package
+\vspace{.1in}
+\begin{Schunk}
+\begin{Sinput}
+> plotsub<-subset(student_long,year=='2001' & grade==6)
+> varnames<-c('Female','Proficiency')
+> mosaictabs.label(plotsub,plotsub$female,plotsub$proflvl,
++                 varnames,'Gender and Proficiency','Dummy Data 2012')
+\end{Sinput}
+\end{Schunk}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Maps}
@@ -499,6 +719,7 @@ Often when we do an in house analysis it does not get used or only gets used onc
 
 \begin{frame}
 \frametitle{Faceted Hex}
+\vspace{-.1in}
 \begin{center}
 \scalebox{.75}{
 \includegraphics[width=.85\textwidth]{hex}
@@ -530,9 +751,9 @@ Often when we do an in house analysis it does not get used or only gets used onc
 
 \begin{frame}
 \frametitle{Proficiency Polygon}
-\vspace{-.1in}
+\vspace{-.13in}
 \begin{center}
-\scalebox{.85}{
+\scalebox{.82}{
 \includegraphics[width=.95\textwidth]{proficiencypolygon}
 }
 \end{center}
@@ -542,24 +763,61 @@ Often when we do an in house analysis it does not get used or only gets used onc
 
 \begin{frame}
 \frametitle{Individual Growth Trajectories}
-\vspace{-.15in}
+\vspace{-.2in}
 \begin{center}
-\scalebox{.9}{
+\scalebox{.85}{
 \includegraphics[width=.95\textwidth]{facetstudents}
 }
 \end{center}
 \end{frame}
 
 
+% Bug in Sweave compiling this chart in Sweave environment
+% Try to reproduce and report bugfix to ggplot2 and Sweave teams
+
+
+
+
 \begin{frame}
 \frametitle{Individual Growth Trajectories}
-\vspace{.05in}
+\vspace{-.1in}
 \begin{center}
-\scalebox{.9}{
+\scalebox{.8}{
 \includegraphics[width=.9\textwidth]{facetstudentspoly}
 }
 \end{center}
 \end{frame}
+
+\begin{Schunk}
+\begin{Soutput}
+null device 
+          1 
+\end{Soutput}
+\end{Schunk}
+
+\begin{frame}
+\frametitle{Communicate Statistical Models}
+\vspace{.05in}
+\begin{center}
+\scalebox{.9}{
+\includegraphics[width=.9\textwidth]{coefplot1}
+}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Communicate Statistical Models II }
+\vspace{.05in}
+\begin{center}
+\scalebox{.9}{
+\includegraphics[width=.9\textwidth]{effectsize}
+}
+\end{center}
+\end{frame}
+
 
 \subsection{Getting StaRted}
 \label{sec: start}
@@ -603,22 +861,21 @@ Often when we do an in house analysis it does not get used or only gets used onc
 \frametitle{Deconstruct R Commands}
 \begin{Schunk}
 \begin{Sinput}
-> summary(student_long[,28:31])
+> summary(student_long[,28:30])
 \end{Sinput}
 \begin{Soutput}
-     readSS          mathSS             proflvl      
- Min.   :200.0   Min.   :200.0   below basic: 37618  
- 1st Qu.:430.3   1st Qu.:419.5   basic      : 85322  
- Median :495.6   Median :480.9   proficient :195231  
- Mean   :495.1   Mean   :483.7   advanced   :131829  
- 3rd Qu.:559.5   3rd Qu.:545.4                       
- Max.   :866.9   Max.   :839.9                       
- race      
- A:  8802  
- B:185748  
- H: 50025  
- I:  3732  
- W:201693  
+     readSS          mathSS     
+ Min.   :200.0   Min.   :200.0  
+ 1st Qu.:430.9   1st Qu.:420.8  
+ Median :494.4   Median :481.2  
+ Mean   :494.9   Mean   :483.7  
+ 3rd Qu.:558.4   3rd Qu.:543.8  
+ Max.   :850.4   Max.   :857.5  
+        proflvl      
+ below basic: 35927  
+ basic      : 85983  
+ proficient :198393  
+ advanced   :129697  
 \end{Soutput}
 \end{Schunk}
 \begin{itemize}
@@ -628,50 +885,11 @@ Often when we do an in house analysis it does not get used or only gets used onc
 \end{itemize}
 \end{frame}
 
-\begin{frame}[containsverbatim]
-\frametitle{Simple R Operations}
-\begin{Schunk}
-\begin{Sinput}
-> with(student_long,mean(readSS[year=='2001' & grade==4]))
-\end{Sinput}
-\begin{Soutput}
-[1] 445.0533
-\end{Soutput}
-\end{Schunk}
-\begin{Schunk}
-\begin{Sinput}
-> with(student_long,median(readSS[year=='2001' & grade==4]))
-\end{Sinput}
-\begin{Soutput}
-[1] 442.5596
-\end{Soutput}
-\end{Schunk}
-\begin{Schunk}
-\begin{Sinput}
-> with(student_long,max(readSS[year=='2001' & grade==4]))
-\end{Sinput}
-\begin{Soutput}
-[1] 721.4892
-\end{Soutput}
-\end{Schunk}
-\begin{Schunk}
-\begin{Sinput}
-> with(student_long,min(readSS[year=='2001' & grade==4]))
-\end{Sinput}
-\begin{Soutput}
-[1] 200
-\end{Soutput}
-\end{Schunk}
-\begin{Schunk}
-\begin{Sinput}
-> with(student_long,summary(readSS[year=='2001' & grade==4]))
-\end{Sinput}
-\begin{Soutput}
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  200.0   393.3   442.6   445.1   494.7   721.5 
-\end{Soutput}
-\end{Schunk}
-\end{frame}
+% Remove this slide--too lengthy
+
+%\begin{frame}[containsverbatim]
+%\frametitle{Simple R Operations}
+%\end{frame}
 
   
 \begin{frame}[containsverbatim]
@@ -684,9 +902,9 @@ Let's test for balance among some categories of students
 \end{Sinput}
 \begin{Soutput}
       race
-female    A    B    H    I    W
-     0  234 5087 1414   99 5504
-     1  255 5209 1381  113 5704
+female    W    B    H    I    A
+     0 5570 5081 1365  107  224
+     1 5653 5252 1394  116  238
 \end{Soutput}
 \end{Schunk}
 \begin{Schunk}
@@ -698,9 +916,9 @@ female    A    B    H    I    W
 \end{Sinput}
 \begin{Soutput}
       race
-female  A  B  H  I  W
-     0  1 20  6  0 22
-     1  1 21  6  0 23
+female  W  B  H  I  A
+     0 22 20  5  0  1
+     1 23 21  6  0  1
 \end{Soutput}
 \end{Schunk}
 \end{frame}
@@ -709,23 +927,21 @@ female  A  B  H  I  W
 \frametitle{Crosstabs}
 We can even output the results of R commands into a print-ready format. As we have below.
 % latex table generated in R 2.14.1 by xtable 1.6-0 package
-% Wed Feb  1 11:36:36 2012
+% Wed Feb 15 07:47:38 2012
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{rrrrrr}
   \hline
- & A & B & H & I & W \\ 
+ & W & B & H & I & A \\ 
   \hline
-0 & 1.00 & 20.00 & 6.00 & 0.00 & 22.00 \\ 
-  1 & 1.00 & 21.00 & 6.00 & 0.00 & 23.00 \\ 
+0 & 22.00 & 20.00 & 5.00 & 0.00 & 1.00 \\ 
+  1 & 23.00 & 21.00 & 6.00 & 0.00 & 1.00 \\ 
    \hline
 \end{tabular}
 \end{center}
 \end{table}\end{frame}
 
-\section{More Advanced Functions}
-\subsection{Analysis}
-
+\subsection{Advanced Extensions of R}
 \begin{frame}
 \frametitle{Doing More than the Basics}
   \begin{itemize}
@@ -737,35 +953,32 @@ We can even output the results of R commands into a print-ready format. As we ha
 \textbf{The downside of this is that these functions can have a steep learning curve.}
 \end{frame}
 
+\section{Policy Analysis Tools}
+\subsection{Statistical Modeling}
+
 \begin{frame}[containsverbatim]
 \frametitle{ANOVA}
 We can also do statistical tests using both Bayesian and Frequentist methods.
 \begin{Schunk}
 \begin{Sinput}
-> nova1<-aov(readSS~female*race*econ,data=novaset)
+> nova1<-aov(readSS~female*race+econ,data=novaset)
 > summary(nova1)
 \end{Sinput}
 \begin{Soutput}
-                    Df   Sum Sq  Mean Sq  F value   Pr(>F)
-female               1  2097543  2097543  728.507  < 2e-16
-race                 4 40225804 10056451 3492.748  < 2e-16
-econ                 1 22330214 22330214 7755.600  < 2e-16
-female:race          4    81042    20261    7.037 1.17e-05
-female:econ          1     6797     6797    2.361   0.1244
-race:econ            4   189430    47358   16.448 1.83e-13
-female:race:econ     4    23672     5918    2.055   0.0838
-Residuals        24980 71923350     2879                  
-                    
-female           ***
-race             ***
-econ             ***
-female:race      ***
-female:econ         
-race:econ        ***
-female:race:econ .  
-Residuals           
+               Df   Sum Sq  Mean Sq  F value
+female          1  2176464  2176464  763.682
+race            4 33929701  8482425 2976.331
+econ            1 20785160 20785160 7293.140
+female:race     4    50009    12502    4.387
+Residuals   24989 71217664     2850         
+             Pr(>F)    
+female      < 2e-16 ***
+race        < 2e-16 ***
+econ        < 2e-16 ***
+female:race 0.00152 ** 
+Residuals              
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
 \end{Soutput}
 \end{Schunk}
 \end{frame}
@@ -774,21 +987,18 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 \frametitle{Pretty Output}
 We can also do print-ready model outputs with R's extensible formatting
 % latex table generated in R 2.14.1 by xtable 1.6-0 package
-% Wed Feb  1 11:36:37 2012
+% Wed Feb 15 07:47:38 2012
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{lrrrrr}
   \hline
  & Df & Sum Sq & Mean Sq & F value & Pr($>$F) \\ 
   \hline
-female           & 1 & 2097543.47 & 2097543.47 & 728.51 & 0.0000 \\ 
-  race             & 4 & 40225803.97 & 10056450.99 & 3492.75 & 0.0000 \\ 
-  econ             & 1 & 22330213.97 & 22330213.97 & 7755.60 & 0.0000 \\ 
-  female:race      & 4 & 81042.06 & 20260.51 & 7.04 & 0.0000 \\ 
-  female:econ      & 1 & 6797.30 & 6797.30 & 2.36 & 0.1244 \\ 
-  race:econ        & 4 & 189430.29 & 47357.57 & 16.45 & 0.0000 \\ 
-  female:race:econ & 4 & 23671.91 & 5917.98 & 2.06 & 0.0838 \\ 
-  Residuals        & 24980 & 71923350.40 & 2879.24 &  &  \\ 
+female      & 1 & 2176463.53 & 2176463.53 & 763.68 & 0.0000 \\ 
+  race        & 4 & 33929701.29 & 8482425.32 & 2976.33 & 0.0000 \\ 
+  econ        & 1 & 20785160.43 & 20785160.43 & 7293.14 & 0.0000 \\ 
+  female:race & 4 & 50008.56 & 12502.14 & 4.39 & 0.0015 \\ 
+  Residuals   & 24989 & 71217663.75 & 2849.96 &  &  \\ 
    \hline
 \end{tabular}
 \end{center}
@@ -809,41 +1019,67 @@ lm(formula = readSS ~ female * race * econ + grade * year, data = student_long)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--232.761  -34.179    0.123   34.270  264.081 
+-284.566  -34.219    0.104   34.321  246.441 
 
 Coefficients:
-                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)        373.8444     1.4086 265.397  < 2e-16 ***
-female              16.3185     1.8846   8.659  < 2e-16 ***
-raceB              -39.3492     1.4405 -27.315  < 2e-16 ***
-raceH              -35.1787     1.5318 -22.966  < 2e-16 ***
-raceI                3.6151     2.4163   1.496   0.1346    
-raceW                8.9380     1.3582   6.581 4.68e-11 ***
-econ1              -77.9826     1.6455 -47.391  < 2e-16 ***
-grade               22.0576     0.0776 284.258  < 2e-16 ***
-year2001             2.7031     0.6320   4.277 1.89e-05 ***
-year2002           140.6231     0.6320 222.506  < 2e-16 ***
-female:raceB         1.9210     2.0292   0.947   0.3438    
-female:raceH        -1.5938     2.1502  -0.741   0.4585    
-female:raceI         4.6054     3.4470   1.336   0.1815    
-female:raceW        -2.6560     1.9121  -1.389   0.1648    
-female:econ1        -1.2084     2.3147  -0.522   0.6016    
-raceB:econ1         13.5581     1.7386   7.798 6.28e-15 ***
-raceH:econ1         28.8879     1.8427  15.677  < 2e-16 ***
-raceI:econ1          2.5158     3.0038   0.838   0.4023    
-raceW:econ1         14.8205     1.6773   8.836  < 2e-16 ***
-grade:year2001       8.2691     0.1097  75.353  < 2e-16 ***
-grade:year2002      -5.1974     0.1097 -47.361  < 2e-16 ***
-female:raceB:econ1  -5.0485     2.4468  -2.063   0.0391 *  
-female:raceH:econ1  -2.2068     2.5869  -0.853   0.3936    
-female:raceI:econ1  -4.4296     4.2397  -1.045   0.2961    
-female:raceW:econ1   0.2727     2.3594   0.116   0.9080    
+                    Estimate Std. Error  t value
+(Intercept)        383.11107    0.49828  768.865
+female              14.24756    0.32404   43.969
+raceB              -37.21069    0.57997  -64.160
+raceH              -41.01409    0.78264  -52.405
+raceI                2.48529    2.15941    1.151
+raceA                0.45644    1.38578    0.329
+econ1              -54.71664    0.32522 -168.246
+grade               20.81004    0.07791  267.111
+year2001            -3.48643    0.63452   -5.495
+year2002           134.55881    0.63452  212.065
+female:raceB        -0.88573    0.82287   -1.076
+female:raceH         4.46915    1.09121    4.096
+female:raceI         4.72824    2.88579    1.638
+female:raceA        -0.04431    1.93005   -0.023
+female:econ1        -3.22112    0.45766   -7.038
+raceB:econ1        -11.97227    0.64901  -18.447
+raceH:econ1          6.46426    0.89487    7.224
+raceI:econ1        -25.56913    2.62396   -9.744
+raceA:econ1        -23.59874    1.72464  -13.683
+grade:year2001       9.50620    0.11018   86.281
+grade:year2002      -3.95024    0.11018  -35.853
+female:raceB:econ1  -0.29569    0.91935   -0.322
+female:raceH:econ1  -2.03755    1.25022   -1.630
+female:raceI:econ1   1.70605    3.57366    0.477
+female:raceA:econ1  -2.64903    2.39991   -1.104
+                   Pr(>|t|)    
+(Intercept)         < 2e-16 ***
+female              < 2e-16 ***
+raceB               < 2e-16 ***
+raceH               < 2e-16 ***
+raceI                 0.250    
+raceA                 0.742    
+econ1               < 2e-16 ***
+grade               < 2e-16 ***
+year2001           3.92e-08 ***
+year2002            < 2e-16 ***
+female:raceB          0.282    
+female:raceH       4.21e-05 ***
+female:raceI          0.101    
+female:raceA          0.982    
+female:econ1       1.95e-12 ***
+raceB:econ1         < 2e-16 ***
+raceH:econ1        5.07e-13 ***
+raceI:econ1         < 2e-16 ***
+raceA:econ1         < 2e-16 ***
+grade:year2001      < 2e-16 ***
+grade:year2002      < 2e-16 ***
+female:raceB:econ1    0.748    
+female:raceH:econ1    0.103    
+female:raceI:econ1    0.633    
+female:raceA:econ1    0.270    
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
 
-Residual standard error: 51.33 on 449975 degrees of freedom
-Multiple R-squared: 0.6852,  Adjusted R-squared: 0.6852 
-F-statistic: 4.081e+04 on 24 and 449975 DF,  p-value: < 2.2e-16 
+Residual standard error: 51.53 on 449975 degrees of freedom
+Multiple R-squared: 0.6742,  Adjusted R-squared: 0.6742 
+F-statistic: 3.88e+04 on 24 and 449975 DF,  p-value: < 2.2e-16 
 \end{Soutput}
 \end{Schunk}
 \end{frame}
@@ -867,9 +1103,10 @@ F-statistic: 4.081e+04 on 24 and 449975 DF,  p-value: < 2.2e-16
 \begin{frame}
 \frametitle{Better Fitting}
 Using advanced techniques we can greatly improve our model fit over the OLS model.
+
 \vspace{-.1in}
 \begin{center}
-\includegraphics[height=.7\paperheight]{mlfitted}
+\includegraphics[height=.65\paperheight]{mlfitted}
 \end{center}
 \end{frame}
 
@@ -884,21 +1121,180 @@ A simple mixed-effects model estimated with an R package can outperform the simp
 \end{frame}
 
 
+\section{Putting It Together to Collaborate}
+
+\begin{frame}
+\frametitle{Some stuff}
+The advantage of R comes when we specialize to develop \textcolor{red}{advanced tools} that are compatible across our \textcolor{blue}{very similar datasets.} 
+\end{frame}
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{hackathon}}
+\begin{frame}[plain]
+\frametitle{Collaborative Development}
+\end{frame}
+}
+
+
+\subsection{Same Data, Similar Analyses}
+
+\begin{frame}
+\frametitle{Leverage Similar Data}
+\Large Why can we do this?
+\begin{itemize}
+  \item We all share similar data with similar attributes and similar reporting needs
+  \item Standardizing on our analysis language makes applying analysis from one place to another easy due to data similarities
+  \item \Large \textbf{\textcolor{green}{Build it.} \textcolor{blue}{Share it.} \textcolor{red}{Use it.}}
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{Coordinating and Social Coding}
+\begin{frame}
+\frametitle{GitHub}
+\Large \textbf{\textcolor{blue}{GitHub}} \normalsize provides an excllent way to do this. 
+\vspace{.5in}
+\begin{center}
+\includegraphics[width=.45\textwidth]{GitHublogo}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{LDS\_TOOLS}
+\vspace{.18in}
+\Large  \textcolor{blue}{\href{https://github.com/jknowles/LDS_TOOLS}{https://github.com/jknowles/LDS\_TOOLS}}
+\begin{itemize}
+  \item Uses the \textbf{`git'} version control system to track collaborative coding on the same source document
+  \item Free and open source coding environment that plays well with RStudio
+  \item No need to contribute, provides easy way to access work of others
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Open Source Analysis Code}
+\begin{itemize}
+  \item LDS\_TOOLS is a fledgling effort to open source many of the graphics and analyses from earlier in this presentation
+  \item Make R code and \LaTeX{} code available to be applied to other SEA and LEA data
+  \item Packaged with a dummy dataset representing common educational data attributes for testing and sharing 
+  \item Share visualization techniques, statistical models, and even full reports
+  \item Plug and play--change the variables to match your data and produce the same visualization, report, analysis
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{LDS\_TOOLS Available Now}
+You can visit online at: \textcolor{blue}{\href{https://github.com/jknowles/LDS_TOOLS}{https://github.com/jknowles/LDS\_TOOLS}}
+\vspace{.1in}
+\begin{columns}
+  \column[t]{.5\textwidth}
+  \textbf{Available Tools:}
+    \begin{itemize}
+      \item Improved mosaic plots
+      \item Gantt charts for project planning
+      \item Proficiency polygons for assessments
+      \item Convenience functions for education data
+    \end{itemize}
+  \column[t]{.5\textwidth}
+  \textbf{Planned Tools:}
+    \begin{itemize}
+      \item Easy to make maps
+      \item Data mining and statistical modeling routines
+      \item Pre-built data quality reports
+      \item Summary reports for NSC, Assessment, and Enrollment data
+    \end{itemize}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Who can get involved?}
+\Large Current staff can use these tools, and even contribute to them
+\normalsize
+\begin{itemize}
+  \item Analysts with a couple of days to learn basic R skills
+  \item Anyone with programming skills
+  \item University partners
+  \item The R Community
+\end{itemize}
+\end{frame}
+
+\section{Conclusion}
+
+{
+\usebackgroundtemplate{\includegraphics[height=.8\paperheight]{questiondice}}
+\begin{frame}[plain]
+\frametitle{Questions?}
+\vspace{.6in}
+\begin{flushright}
+\Huge \textbf{Questions?}
+\end{flushright}
+\vspace{.14in}
+\end{frame}
+}
+
+
+\begin{frame}
+\frametitle{Contact Information}
+\Large For more information:
+\vspace{.1in}
+\begin{center}
+\large Jared Knowles \\
+Wisconsin Department of Public Instruction \\
+jared.knowles@dpi.wi.gov \\
+\textcolor{blue}{\href{https://github.com/jknowles/LDS_TOOLS}{https://github.com/jknowles/LDS\_TOOLS}} \\
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example}
+\vspace{.3in}
+\large This entire presentation was created with R, \LaTeX{} and is available online at GitHub to be edited, modified, and reused. \\
+\textcolor{blue}{\href{https://github.com/jknowles/mis-presentation}{https://github.com/jknowles/mis-presentation}}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Tools}
+
+\begin{itemize}
+  \item \textbf{R} (\href{http://cran.r-project.org/}{http://cran.r-project.org/})
+    \begin{itemize}
+    \item An open source statistics package that is freely available for all platforms.
+    \end{itemize}
+  \item \textbf{RStudio} (\href{http://www.rstudio.org/}{http://www.rstudio.org/})
+    \begin{itemize}
+    \item An enhanced front-end for R. An Integrated Development Environment (\textsc{IDE}) for statistical programming.
+    \end{itemize}
+  \item \textbf{Quantum GIS} (\href{http://www.qgis.org/}{http://www.qgis.org/})
+    \begin{itemize}
+    \item A GIS package that provides most of the functionality of ArcGIS but is freely available.
+    \end{itemize}
+  \item \textbf{GeoDa} (\href{http://geodacenter.asu.edu/}{http://geodacenter.asu.edu/})
+    \begin{itemize}
+    \item A geo-spatial statistics package for analyzing clustering and spatial correlation of datasets.
+    \end{itemize}
+  \item \textbf{\LaTeX{}} (\href{http://www.latex-project.org/}{http://www.latex-project.org/})
+    \begin{itemize}
+    \item A typesetting and document building tool that integrates with R.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tutorials}
+\begin{itemize}
+  \item R Reference (\href{http://www.statmethods.net/}{http://www.statmethods.net/})
+  \item First R Commands to Learn (\href{https://github.com/hadley/devtools/wiki/vocabulary}{https://github.com/hadley/devtools/wiki/vocabulary})
+  \item Beginning with \LaTeX{} (\href{http://en.wikibooks.org/wiki/LaTeX}{http://en.wikibooks.org/wiki/LaTeX})
+  \item Quantum GIS Guide (\href{http://qgis.org/en/documentation/manuals.html}{http://qgis.org/en/documentation/manuals.html})
+  \item R Graph Gallery (\href{http://addictedtor.free.fr/graphiques/}{http://addictedtor.free.fr/graphiques/})
+\end{itemize}
+\end{frame}
+
+
 
 \end{document}
-
-% This file is a solution template for:
-% - Giving a talk on some subject.
-% - The talk is between 15min and 45min long.
-% - Style is ornate.
-% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
-%
-% In principle, this file can be redistributed and/or modified under
-% the terms of the GNU Public License, version 2.
-%
-% However, this file is supposed to be a template to be modified
-% for your own needs. For this reason, if you use this file as a
-% template and not specifically distribute it as part of a another
-% package/program, I grant the extra permission to freely copy and
-% modify this file as you see fit and even to delete this copyright
-% notice.

@@ -1,15 +1,21 @@
-\beamer@endinputifotherversion {3.07pt}
+\beamer@endinputifotherversion {3.12pt}
 \beamer@sectionintoc {1}{What is Policy Relevant Analysis?}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Defining Terms}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{The Problem}{10}{0}{1}
-\beamer@sectionintoc {2}{Extracting Meaning from Data}{18}{0}{2}
-\beamer@subsectionintoc {2}{1}{Why Invest in Analyzing Data?}{19}{0}{2}
-\beamer@subsectionintoc {2}{2}{Why Can't We Invest in Data Analysis?}{24}{0}{2}
-\beamer@subsectionintoc {2}{3}{What is the solution?}{35}{0}{2}
-\beamer@sectionintoc {3}{Introduction to R}{38}{0}{3}
-\beamer@subsectionintoc {3}{1}{What is R?}{39}{0}{3}
-\beamer@subsectionintoc {3}{2}{R Examples}{44}{0}{3}
-\beamer@subsectionintoc {3}{3}{Getting StaRted}{57}{0}{3}
-\beamer@sectionintoc {4}{More Advanced Functions}{63}{0}{4}
-\beamer@subsectionintoc {4}{1}{Analysis}{64}{0}{4}
-\beamer@subsectionintoc {4}{2}{Linear Model Example}{68}{0}{4}
+\beamer@sectionintoc {2}{Extracting Meaning from Data}{20}{0}{2}
+\beamer@subsectionintoc {2}{1}{Why is Data Analysis So Important?}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Barriers to Data Analysis}{27}{0}{2}
+\beamer@subsectionintoc {2}{3}{What is the solution?}{39}{0}{2}
+\beamer@sectionintoc {3}{Introduction to R}{48}{0}{3}
+\beamer@subsectionintoc {3}{1}{What is R?}{49}{0}{3}
+\beamer@subsectionintoc {3}{2}{What can R do?}{55}{0}{3}
+\beamer@subsectionintoc {3}{3}{R Examples}{58}{0}{3}
+\beamer@subsectionintoc {3}{4}{Getting StaRted}{75}{0}{3}
+\beamer@subsectionintoc {3}{5}{Advanced Extensions of R}{80}{0}{3}
+\beamer@sectionintoc {4}{Policy Analysis Tools}{82}{0}{4}
+\beamer@subsectionintoc {4}{1}{Statistical Modeling}{83}{0}{4}
+\beamer@subsectionintoc {4}{2}{Linear Model Example}{86}{0}{4}
+\beamer@sectionintoc {5}{Putting It Together to Collaborate}{96}{0}{5}
+\beamer@subsectionintoc {5}{1}{Same Data, Similar Analyses}{99}{0}{5}
+\beamer@subsectionintoc {5}{2}{Coordinating and Social Coding}{101}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{107}{0}{6}
